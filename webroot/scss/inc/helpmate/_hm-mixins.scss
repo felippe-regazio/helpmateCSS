@@ -1,0 +1,230 @@
+/*
+  PROPERTY TO CLASS
+  Transform a css property into a class. The $prefix
+  is your class name, $prop must be a valid css prop
+  that will be applyed, and the $values must be a list
+  with the $prop possible values. So, the result will
+  be single classes of your prefix + all values that will
+  apply your prop and values to the desired element.
+*/
+@mixin propertyToClass($prefix, $prop, $values){
+  @each $key in $values{ 
+    .#{$prefix}#{$key}{ 
+      #{$prop}: $key; 
+    } 
+  }  
+}
+/* 
+  SIZEFY 
+  Factory mixin Used to create sized prop class forks 
+*/ 
+@mixin sizefy($class, $prop, $initialValue){ 
+  .#{$class}{ 
+    #{$prop}: $initialValue; 
+    &-xs{ 
+      #{$prop}: calc(#{$initialValue} / 4); 
+    } 
+    &-sm{ 
+      #{$prop}: calc(#{$initialValue} / 2); 
+    } 
+    &-md{ 
+      #{$prop}: calc(#{$initialValue} * 2); 
+    } 
+    &-lg{ 
+      #{$prop}: calc(#{$initialValue} * 3); 
+    } 
+    &-xl{ 
+      #{$prop}: calc(#{$initialValue} * 4); 
+    }
+    &-no{ 
+      #{$prop}: 0;
+    } 
+  } 
+} 
+/* 
+  HORIZONTAL AND VERTICAL 
+  Use it to create sized hoz and vert class sizes 
+  Will create class-horizontal and class-vertical 
+  You can bind sm, md, log, xl, no size mods on class 
+*/ 
+@mixin hoz-and-vert($prefix, $prop, $initialValue){ 
+  .#{$prefix}-hori{ 
+    #{$prop}-left: $initialValue; 
+    #{$prop}-right: $initialValue; 
+    &-xs{ 
+      #{$prop}-left: calc(#{$initialValue} / 3); 
+      #{$prop}-right: calc(#{$initialValue} / 3); 
+    } 
+    &-sm{ 
+      #{$prop}-left: calc(#{$initialValue} / 2); 
+      #{$prop}-right: calc(#{$initialValue} / 2); 
+    } 
+    &-md{ 
+      #{$prop}-left: calc(#{$initialValue} * 2); 
+      #{$prop}-right: calc(#{$initialValue} * 2); 
+    } 
+    &-lg{ 
+      #{$prop}-left: calc(#{$initialValue} * 3); 
+      #{$prop}-right: calc(#{$initialValue} * 3); 
+    } 
+    &-xl{ 
+      #{$prop}-left: calc(#{$initialValue} * 4); 
+      #{$prop}-right: calc(#{$initialValue} * 4); 
+    } 
+    &-no{ 
+      #{$prop}: 0; 
+    } 
+  } 
+  .#{$prefix}-vert{ 
+    #{$prop}-top: $initialValue; 
+    #{$prop}-bottom: $initialValue; 
+    &-xs{ 
+      #{$prop}-top: calc(#{$initialValue} / 3); 
+      #{$prop}-bottom: calc(#{$initialValue} / 3); 
+    } 
+    &-sm{ 
+      #{$prop}-top: calc(#{$initialValue} / 2); 
+      #{$prop}-bottom: calc(#{$initialValue} / 2); 
+    } 
+    &-md{ 
+      #{$prop}-top: calc(#{$initialValue} * 2); 
+      #{$prop}-bottom: calc(#{$initialValue} * 2); 
+    } 
+    &-lg{ 
+      #{$prop}-top: calc(#{$initialValue} * 3); 
+      #{$prop}-bottom: calc(#{$initialValue} * 3); 
+    } 
+    &-xl{ 
+      #{$prop}-top: calc(#{$initialValue} * 4); 
+      #{$prop}-bottom: calc(#{$initialValue} * 4); 
+    } 
+    &-no{ 
+      #{$prop}: 0; 
+    } 
+  } 
+}
+/* 
+  BORDER STYLES
+  This is an static mixin used to include a class
+  which can manipulate all border styles
+*/
+@mixin classBorderStyles(){
+  $bordstyles: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset; 
+  @each $key in $bordstyles{ 
+    .bor-#{$key}{ 
+      border-style: #{$key}; 
+      &-top{ 
+        border-top-style: $key; 
+      } 
+      &-right{ 
+        border-right-style: $key; 
+      } 
+      &-left{ 
+        border-left-style: $key; 
+      } 
+      &-bottom{ 
+        border-bottom-style: $key; 
+      } 
+      &-hori{ 
+        border-top-style: $key; 
+        border-bottom-style: $key; 
+      } 
+      &-vert{ 
+        border-right-style: $key; 
+        border-left-style: $key; 
+      } 
+    } 
+  }
+}
+/* 
+  BORDER RADIUS TOP & BOTTOM 
+  Create a short and bottom border radius shortcut 
+  to be used as brad-top[sizes] and brad-bottom[sizes] 
+*/
+@mixin classBorderRadiusTB(){
+  $shortbrads: top, bottom; 
+  @each $key in $shortbrads{ 
+    .brad-#{$key}{ 
+      @extend .brad-#{$key}-r; 
+      @extend .brad-#{$key}-l; 
+      &-xs{ 
+        @extend .brad-#{$key}-r-xs; 
+        @extend .brad-#{$key}-l-xs; 
+      } 
+      &-sm{ 
+        @extend .brad-#{$key}-r-sm; 
+        @extend .brad-#{$key}-l-sm; 
+      } 
+      &-md{ 
+        @extend .brad-#{$key}-r-md; 
+        @extend .brad-#{$key}-l-md; 
+      } 
+      &-lg{ 
+        @extend .brad-#{$key}-r-lg; 
+        @extend .brad-#{$key}-l-lg; 
+      } 
+      &-xl{ 
+        @extend .brad-#{$key}-r-xl; 
+        @extend .brad-#{$key}-l-xl; 
+      } 
+      &-no{ 
+        @extend .brad-#{$key}-r-no; 
+      } 
+    } 
+  } 
+}
+/*
+  HIDDINGS
+*/
+@mixin classHiddings(){
+  .invisible{ 
+    visibility: hidden; 
+  } 
+  .hidden{ 
+    display: none; 
+  } 
+  .transparent{ 
+    opacity: 0; 
+  } 
+  .offscreen{ 
+    position: fixed; 
+    opacity: 0; 
+    top: -100%; 
+    left: -100%; 
+    height: 0; 
+    width: 0; 
+    z-index: -1; 
+    overflow: hidden; 
+  }
+}
+/* 
+  BORDER RADIUS 100% (CIRCLE) 
+*/
+@mixin classBorderRound(){
+  .brad-round{ 
+    border-radius: 100%; 
+  }
+}
+/* 
+  BACKGROUND NONE
+*/
+@mixin classBgNone(){
+  .bg-none{ 
+    background: none !important; 
+  } 
+}
+/*
+  AFTER AND BEFORE REMOVERS
+*/
+@mixin classAfBfRemover(){
+  .af-none{
+    &:after{
+      content: none !important;
+    }
+  }
+  .bf-none{
+    &:before{
+      content: none !important;
+    }
+  }
+}
