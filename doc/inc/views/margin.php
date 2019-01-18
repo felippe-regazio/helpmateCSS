@@ -1,5 +1,5 @@
 <!-- marDING -->
-<div class="block bg">
+<div class="block">
   <h2>Margin</h2>
   <div>
     <span>

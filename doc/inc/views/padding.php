@@ -1,5 +1,5 @@
 <!-- PADDING -->
-<div class="block bg">
+<div class="block">
   <h2>Padding</h2>
   <div>
     <div class="square mar pad-all-xl">

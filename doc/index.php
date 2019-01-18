@@ -1,40 +1,45 @@
-<?php require_once("webroot/includes/header.php") ?>
+<?php require_once("inc/header.php") ?>
 	<div class="content">
-		
-		<div class="block">
-			<h1>HelpmateCSS</h1>
-			<hr><p>This is a simple page to demonstrate the "Helpmate CSS" classes. The gutter default value is 14px. So the paddings, margins, etc will start on 14px and inc or dec from this. The base value for borders or any other property which requires a thin value to start will begin at 1px and be inc or dec from this. The square size on this demo is 100x100 by default.</p>
-			<br/>
-		</div>
 
+		<!-- If a page was passed -->
 		<?php
-			if(isset($_REQUEST['p'])) $p = $_REQUEST['p'];
-			if(!empty($p) && file_exists("webroot/includes/helpviews/$p.php")):
-				require "webroot/includes/helpviews/$p.php";
-			else:
+			if(isset($_REQUEST['p'])){
+				$notfound = false;
+				$viewname = $_REQUEST['p'];
+				$viewfile = $viewname.'.php';
+				$viewpath = "inc/views/$viewfile";
+				if(file_exists($viewpath))
+					require $viewpath;
+				else
+					$notfound = true;
+			}
 		?>
+
+		<!-- define if is a page or not -->
+		<?php $isPage = isset($_REQUEST['p']) && !$notfound ? true : false;  ?>
+
+		<!-- If paged passed but not found -->
+		<?php if(isset($notfound) && $notfound): ?>
+			<h3 style="color:red">Sorry, page "<?= $viewname ?>" not found :(</h3>
+			<br/>
+		<?php endif; ?>		
+
+		<!-- If not, shows the index -->
+		<?php if(!$isPage): ?>
 			<ul>
-				<li><a href="?p=padding">Padding</a></li>
-				<br/>
-				<li><a href="?p=margin">Margin</a></li>
-				<br/>
-				<li><a href="?p=border">Border</a></li>				
+				<?php $doclist = array_slice(scandir( __DIR__ . "/inc/views" ), 2); ?>
+				<?php foreach($doclist as $link): ?>
+					<?php $link = str_replace('.php', '', $link) ?>
+					<li><a href="<?='?p='.$link?>"><?=ucfirst($link)?></a></li><br/>
+				<?php endforeach; ?>
 			</ul>
 		<?php endif; ?>
 
-		<!-- bottom -->
-		<?php if(!empty($p) && !file_exists("webroot/includes/helpviews/$p.php")): ?>
-			<br/><br/>
-			<p style='color: red'>404: Página "<?=$p?>" Não Encontrada</p>
+		<!-- Go back button if in a page -->
+		<?php if(isset($viewname)): ?>
+			<br/>
+			<a href="?">Home</a>
 		<?php endif; ?>
-		<?php if(!empty($p)): ?> <a href="?">Voltar</a><?php endif; ?>
 
 	</div>
-<?php require_once("webroot/includes/footer.php") ?>
-<?php 
-  require "webroot/includes/hotreloader.php";
-  $reloader = new HotReloader();
-  $reloader->setRoot(__DIR__);
-  $reloader->currentConfig();
-  $reloader->init();
-?>
+<?php require_once("inc/footer.php") ?>

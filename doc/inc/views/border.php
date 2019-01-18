@@ -1,5 +1,5 @@
 <!-- borDING -->
-<div class="block bg">
+<div class="block">
   <h2>Border Styles</h2>
   <div>
     <div class="square mar bor-solid hey">

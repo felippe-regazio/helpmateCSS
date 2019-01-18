@@ -1,0 +1,53 @@
+html, body{
+  padding: 7px;
+  font-family: sans-serif;
+}
+body a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #39B7CD;
+}
+.content{
+  font-family: sans-serif;
+  padding: 14px;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto
+}
+.content .block{
+  padding: 14px;
+  margin-bottom: 28px;
+}
+.content .block h3{
+  margin-top: 0;
+}
+.content .block div span{
+  background-color: lightblue;
+  display: inline-block;
+  margin: 4px;
+}
+.square{
+  background-color: #cccccc;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  margin: 0px;
+}
+.square.hey{  
+  font-weight: 700;
+  color: darkviolet;
+}
+.square.mar{
+  margin: 8px;
+}
+.square div{  
+  background-color: #dddddd; 
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square.div.bgno{
+  background-color: transparent;
+}

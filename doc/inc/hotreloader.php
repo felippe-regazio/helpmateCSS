@@ -216,17 +216,13 @@ class HotReloader {
    * for the non setted ones. This functions gets the application fingerprint
    * and sends on every current page request (Etag), than add the JS watcher.
    * When this fingerprint changes, means a change on the page, when it happens,
-   * a reload will be triggered by the JS wich is always wathing this changes.
-   * The etag is added only when the request is a xhr to satisfy the Live.js,
-   * if the request is a http, the etag is not added cause its not http business
+   * a reload will be triggered by the JS wich is always wathing this changes   
    *
    * @return void
    */
   public function init(){
-    // identify the request
-    $isXhr = !empty($isXhr) && strtolower($isXhr) == 'xmlhttprequest' ? true : false;
-    // add the application state hash on the headers only to the xhr requests
-    if($isXhr) $this->addEtagOnHeader();
+    // add the application state hash on the headers
+    $this->addEtagOnHeader();
     // add the JS Watcher
     $this->addJsWatcher();
   }
@@ -242,7 +238,7 @@ class HotReloader {
   */    
   private function addEtagOnHeader(){
       $hash = $this->createStateHash();
-      if( $hash ) header( "Etag: " . $hash, true ); return true;
+      if( $hash ) header( "Etag: " . $hash ); return true;
       echo "Hot Reloader failed to generate Application State Hash";
   }     
 
