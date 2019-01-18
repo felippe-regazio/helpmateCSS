@@ -29,8 +29,8 @@ body a{
 .square{
   background-color: #cccccc;
   display: inline-block;
-  height: 120px;
-  width: 120px;
+  height: 132px;
+  width: 132px;
   margin: 0px;
 }
 .square.hey{  
@@ -48,6 +48,6 @@ body a{
   align-items: center;
   justify-content: center;
 }
-.square.div.bgno{
+.square div.bgno{
   background-color: transparent;
 }

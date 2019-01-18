@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
+<?php error_reporting(E_ERROR | E_PARSE); ?>
 <html>
 <head>
 	<title>HelpmateCSS Documentation</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="icon" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="inc/assets/page.css">
-  <link rel="stylesheet" type="text/css" href="../dist/helpmate.min.css">
+  <link rel="stylesheet" type="text/css" href="../dist/helpmate.css">
 </head>
 <body>
 <div class="block">

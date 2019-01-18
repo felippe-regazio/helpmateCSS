@@ -25,9 +25,7 @@ gulp.task('build-dist', function(){
 });
 // WATCH
 gulp.task('watch-src', function() {
-  gulp.watch('./src/**/*.scss', function() {
-    gulp.run('build-dist');
-  });
+  gulp.watch('./src/**/*.scss', gulp.series('build-dist'));
 });
 // START
 gulp.task('default', gulp.series('build-dist','watch-src'));

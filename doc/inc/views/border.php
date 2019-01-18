@@ -37,131 +37,155 @@
   </div>  
   <h2>Border Radius</h2>
   <div>
-    <div class="square mar brad-all-xl">
-      <div class="bgno">bor-all-xl</div>
+    <div>
+      <div class="square mar brad-all-xl">
+        <div class="bgno">brad-all-xl</div>
+      </div>
+      <div class="square mar brad-all-lg">
+        <div class="bgno">brad-all-lg</div>
+      </div>
+      <div class="square mar brad-all-md">
+        <div class="bgno">brad-all-md</div>
+      </div>
+      <div class="square mar brad-all hey">
+        <div class="bgno">brad-all</div>
+      </div>
+      <div class="square mar brad-all-sm">
+        <div class="bgno">brad-all-sm</div>
+      </div>
+      <div class="square mar brad-all-xs">
+        <div class="bgno">brad-all-xs</div>
+      </div>
     </div>
-    <div class="square mar brad-all-lg">
-      <div class="bgno">bor-all-lg</div>
+    <h4>Top Right</h4>
+    <div>
+      <div class="square mar brad-top-r-xl">
+        <div class="bgno">brad-top-r-xl</div>
+      </div>
+      <div class="square mar brad-top-r-lg">
+        <div class="bgno">brad-top-r-lg</div>
+      </div>
+      <div class="square mar brad-top-r-md">
+        <div class="bgno">brad-top-r-md</div>
+      </div>
+      <div class="square mar brad-top-r hey">
+        <div class="bgno">brad-top-r</div>
+      </div>
+      <div class="square mar brad-top-r-sm">
+        <div class="bgno">brad-top-r-sm</div>
+      </div>
+      <div class="square mar brad-top-r-xs">
+        <div class="bgno">brad-top-r-xs</div>
+      </div>      
     </div>
-    <div class="square mar brad-all-md">
-      <div class="bgno">bor-all-md</div>
+    <h4>Top Left</h4>
+    <div>
+      <div class="square mar brad-top-l-xl">
+        <div class="bgno">brad-top-l-xl</div>
+      </div>
+      <div class="square mar brad-top-l-lg">
+        <div class="bgno">brad-top-l-lg</div>
+      </div>
+      <div class="square mar brad-top-l-md">
+        <div class="bgno">brad-top-l-md</div>
+      </div>
+      <div class="square mar brad-top-l hey">
+        <div class="bgno">brad-top-l</div>
+      </div>
+      <div class="square mar brad-top-l-sm">
+        <div class="bgno">brad-top-l-sm</div>
+      </div>
+      <div class="square mar brad-top-l-xs">
+        <div class="bgno">brad-top-l-xs</div>
+      </div>      
     </div>
-    <div class="square mar brad-all hey">
-      <div class="bgno">bor-all</div>
+    <h4>Bottom Left</h4>
+    <div>
+      <div class="square mar brad-bottom-l-xl">
+        <div class="bgno">brad-bottom-l-xl</div>
+      </div>
+      <div class="square mar brad-bottom-l-lg">
+        <div class="bgno">brad-bottom-l-lg</div>
+      </div>
+      <div class="square mar brad-bottom-l-md">
+        <div class="bgno">brad-bottom-l-md</div>
+      </div>
+      <div class="square mar brad-bottom-l hey">
+        <div class="bgno">brad-bottom-l</div>
+      </div>
+      <div class="square mar brad-bottom-l-sm">
+        <div class="bgno">brad-bottom-l-sm</div>
+      </div>
+      <div class="square mar brad-bottom-l-xs">
+        <div class="bgno">brad-bottom-l-xs</div>
+      </div>      
     </div>
-    <div class="square mar brad-all-sm">
-      <div class="bgno">bor-all-xs</div>
+    <h4>Top Left</h4>
+    <div>
+      <div class="square mar brad-top-l-xl">
+        <div class="bgno">brad-top-l-xl</div>
+      </div>
+      <div class="square mar brad-top-l-lg">
+        <div class="bgno">brad-top-l-lg</div>
+      </div>
+      <div class="square mar brad-top-l-md">
+        <div class="bgno">brad-top-l-md</div>
+      </div>
+      <div class="square mar brad-top-l hey">
+        <div class="bgno">brad-top-l</div>
+      </div>
+      <div class="square mar brad-top-l-sm">
+        <div class="bgno">brad-top-l-sm</div>
+      </div>
+      <div class="square mar brad-top-l-xs">
+        <div class="bgno">brad-top-l-xs</div>
+      </div>
     </div>
-    <div class="square mar brad-all-xs">
-      <div class="bgno">bor-all-xs</div>
+    <h4>Top, Bottom & Round</h4>
+    <div>
+      <div class="square mar brad-top-xl">
+        <div class="bgno">brad-top-xl</div>
+      </div>
+      <div class="square mar brad-top-lg">
+        <div class="bgno">brad-top-lg</div>
+      </div>
+      <div class="square mar brad-top-md">
+        <div class="bgno">brad-top-md</div>
+      </div>
+      <div class="square mar brad-top">
+        <div class="bgno">brad-top</div>
+      </div>
+      <div class="square mar brad-top-sm">
+        <div class="bgno">brad-top-sm</div>
+      </div>
+      <div class="square mar brad-top-xs">
+        <div class="bgno">brad-top-xs</div>
+      </div>
+    </div>
+    <div>
+      <div class="square mar brad-bottom-xl">
+        <div class="bgno">brad-bottom-xl</div>
+      </div>
+      <div class="square mar brad-bottom-lg">
+        <div class="bgno">brad-bottom-lg</div>
+      </div>
+      <div class="square mar brad-bottom-md">
+        <div class="bgno">brad-bottom-md</div>
+      </div>
+      <div class="square mar brad-bottom">
+        <div class="bgno">brad-bottom</div>
+      </div>
+      <div class="square mar brad-bottom-sm">
+        <div class="bgno">brad-bottom-sm</div>
+      </div>
+      <div class="square mar brad-bottom-xs">
+        <div class="bgno">brad-bottom-xs</div>
+      </div>
+    </div>
+    <div>
+      <div class="square mar brad-round">
+        <div class="bgno">brad-round</div>
+      </div>      
     </div>    
   </div>
-  <h2>Left</h2>
-  <div>
-    <div class="square mar bor-left-xl">
-      <div>bor-left-xl</div>
-    </div>
-    <div class="square mar bor-left-lg">
-      <div>bor-left-lg</div>
-    </div>
-    <div class="square mar bor-left-md">
-      <div>bor-left-md</div>
-    </div>
-    <div class="square mar bor-left hey">
-      <div>bor-left</div>
-    </div>
-    <div class="square mar bor-left-xs">
-      <div>bor-left-xs</div>
-    </div>
-  </div>
-  <h2>Right</h2>
-  <div>
-    <div class="square mar bor-right-xl">
-      <div>bor-right-xl</div>
-    </div>
-    <div class="square mar bor-right-lg">
-      <div>bor-right-lg</div>
-    </div>
-    <div class="square mar bor-right-md">
-      <div>bor-right-md</div>
-    </div>
-    <div class="square mar bor-right hey">
-      <div>bor-right</div>
-    </div>
-    <div class="square mar bor-right-xs">
-      <div>bor-right-xs</div>
-    </div>
-  </div>
-  <h2>Top</h2>
-  <div>
-    <div class="square mar bor-top-xl">
-      <div>bor-top-xl</div>
-    </div>
-    <div class="square mar bor-top-lg">
-      <div>bor-top-lg</div>
-    </div>
-    <div class="square mar bor-top-md">
-      <div>bor-top-md</div>
-    </div>
-    <div class="square mar bor-top hey">
-      <div>bor-top</div>
-    </div>
-    <div class="square mar bor-top-xs">
-      <div>bor-top-xs</div>
-    </div>
-  </div>
-  <h2>Bottom</h2>
-  <div>
-    <div class="square mar bor-bottom-xl">
-      <div>bor-bottom-xl</div>
-    </div>
-    <div class="square mar bor-bottom-lg">
-      <div>bor-bottom-lg</div>
-    </div>
-    <div class="square mar bor-bottom-md">
-      <div>bor-bottom-md</div>
-    </div>
-    <div class="square mar bor-bottom hey">
-      <div>bor-bottom</div>
-    </div>
-    <div class="square mar bor-bottom-xs">
-      <div>bor-bottom-xs</div>
-    </div>
-  </div>
-  <h2>Vertical</h2>
-  <div>
-    <div class="square mar bor-vert-xl">
-      <div>bor-vert-xl</div>
-    </div>
-    <div class="square mar bor-vert-lg">
-      <div>bor-vert-lg</div>
-    </div>
-    <div class="square mar bor-vert-md">
-      <div>bor-vert-md</div>
-    </div>
-    <div class="square mar bor-vert hey">
-      <div>bor-vert</div>
-    </div>
-    <div class="square mar bor-vert-xs">
-      <div>bor-vert-xs</div>
-    </div>
-  </div>      
-  <h2>Horizontal</h2>
-  <div>
-    <div class="square mar bor-hori-xl">
-      <div>bor-hori-xl</div>
-    </div>
-    <div class="square mar bor-hori-lg">
-      <div>bor-hori-lg</div>
-    </div>
-    <div class="square mar bor-hori-md">
-      <div>bor-hori-md</div>
-    </div>
-    <div class="square mar bor-hori hey">
-      <div>bor-hori</div>
-    </div>
-    <div class="square mar bor-hori-xs">
-      <div>bor-hori-xs</div>
-    </div>
-  </div>    
 </div>

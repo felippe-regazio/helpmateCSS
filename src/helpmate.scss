@@ -22,15 +22,6 @@
 @include sizefy('mar-right', 'margin-right', var(--hm-gutter));
 @include sizefy('mar-bottom', 'margin-bottom', var(--hm-gutter));
 /* 
-  BORDER 
-*/ 
-@include hoz-and-vert('bor','border', 1px);
-@include sizefy('bor-all', 'border', 1px);
-@include sizefy('bor-top', 'border-top', 1px);
-@include sizefy('bor-left', 'border-left', 1px);
-@include sizefy('bor-right', 'border-right', 1px);
-@include sizefy('bor-bottom', 'border-bottom', 1px);
-/* 
   BORDER RADIUS 
 */ 
 @include sizefy('brad-all', 'border-radius', var(--hm-gutter));
