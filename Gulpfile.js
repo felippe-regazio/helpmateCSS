@@ -1,29 +1,33 @@
 var 
-  gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  concat = require('gulp-concat'),
-  minifyCSS = require('gulp-clean-css'),
-  prefix = require('gulp-autoprefixer');
-
-// SCSS
-
-gulp.task('scss', function(){
-    return gulp.src('webroot/scss/**/*.scss')
-    .pipe(sass())
-    .pipe(prefix('last 2 versions'))
-    // .pipe(minifyCSS())
-    .pipe(concat('main.min.css'))
-    .pipe(gulp.dest('./webroot/dist'))
+  gulp    = require('gulp'),
+  sass    = require('gulp-sass'),
+  concat  = require('gulp-concat'),
+  minify  = require('gulp-clean-css'),
+  csscomb = require('gulp-csscomb'),
+  prefix  = require('gulp-autoprefixer'),
+  nobline = require('gulp-remove-empty-lines'),
+  stripC  = require('gulp-strip-css-comments');
+// BUILD
+gulp.task('build-dist', function(){
+  return gulp.src('./src/helpmate.scss')
+  .pipe(sass())
+  .pipe(stripC())
+  .pipe(prefix('last 2 versions'))
+  .pipe(nobline())
+  .pipe(csscomb())
+  // normal css
+  .pipe(concat('helpmate.css'))
+  .pipe(gulp.dest('./dist'))
+  // minified
+  .pipe(minify())
+  .pipe(concat('helpmate.min.css'))
+  .pipe(gulp.dest('./dist'))
 });
-
 // WATCH
-
-gulp.task('watch', function() {
-  gulp.watch('webroot/scss/**/*.scss', function() {
-      gulp.run('scss');
+gulp.task('watch-src', function() {
+  gulp.watch('./src/**/*.scss', function() {
+    gulp.run('build-dist');
   });
 });
-
-//
-
-gulp.task('default', ['scss','watch']);
+// START
+gulp.task('default', gulp.series('build-dist','watch-src'));
