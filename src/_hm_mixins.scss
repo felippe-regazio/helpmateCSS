@@ -29,14 +29,14 @@
     } 
     &-md{ 
       #{$prop}: calc(#{$initialValue} * 2); 
-    } 
+    }
     &-lg{ 
       #{$prop}: calc(#{$initialValue} * 3); 
     } 
     &-xl{ 
       #{$prop}: calc(#{$initialValue} * 4); 
     }
-    &-no{ 
+    &-none{ 
       #{$prop}: 0;
     } 
   } 
@@ -71,7 +71,7 @@
       #{$prop}-left: calc(#{$initialValue} * 4); 
       #{$prop}-right: calc(#{$initialValue} * 4); 
     } 
-    &-no{ 
+    &-none{ 
       #{$prop}: 0; 
     } 
   } 
@@ -98,7 +98,7 @@
       #{$prop}-top: calc(#{$initialValue} * 4); 
       #{$prop}-bottom: calc(#{$initialValue} * 4); 
     } 
-    &-no{ 
+    &-none{ 
       #{$prop}: 0; 
     } 
   } 
@@ -108,10 +108,10 @@
   This is an static mixin used to include a class
   which can manipulate all border styles
 */
-@mixin classBorderStyles(){
+@mixin classBorderStyles($prefix){
   $bordstyles: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset; 
   @each $key in $bordstyles{ 
-    .bor-#{$key}{ 
+    .#{$prefix}-#{$key}{ 
       border-style: #{$key}; 
       &-top{ 
         border-top-style: $key; 
@@ -139,39 +139,66 @@
 /* 
   BORDER RADIUS TOP & BOTTOM 
   Create a short and bottom border radius shortcut 
-  to be used as brad-top[sizes] and brad-bottom[sizes] 
+  to be used as round-top[sizes] and round-bottom[sizes] 
 */
-@mixin classBorderRadiusTB(){
-  $shortbrads: top, bottom; 
-  @each $key in $shortbrads{ 
-    .brad-#{$key}{ 
-      @extend .brad-#{$key}-r; 
-      @extend .brad-#{$key}-l; 
+@mixin classBorderRadiusTopBottom($prefix){
+  $shortrounds: top, bottom; 
+  @each $key in $shortrounds{ 
+    .#{$prefix}-#{$key}{ 
+      @extend .round-#{$key}-r; 
+      @extend .round-#{$key}-l; 
       &-xs{ 
-        @extend .brad-#{$key}-r-xs; 
-        @extend .brad-#{$key}-l-xs; 
+        @extend .round-#{$key}-r-xs; 
+        @extend .round-#{$key}-l-xs; 
       } 
       &-sm{ 
-        @extend .brad-#{$key}-r-sm; 
-        @extend .brad-#{$key}-l-sm; 
+        @extend .round-#{$key}-r-sm; 
+        @extend .round-#{$key}-l-sm; 
       } 
       &-md{ 
-        @extend .brad-#{$key}-r-md; 
-        @extend .brad-#{$key}-l-md; 
+        @extend .round-#{$key}-r-md; 
+        @extend .round-#{$key}-l-md; 
       } 
       &-lg{ 
-        @extend .brad-#{$key}-r-lg; 
-        @extend .brad-#{$key}-l-lg; 
+        @extend .round-#{$key}-r-lg; 
+        @extend .round-#{$key}-l-lg; 
       } 
       &-xl{ 
-        @extend .brad-#{$key}-r-xl; 
-        @extend .brad-#{$key}-l-xl; 
+        @extend .round-#{$key}-r-xl; 
+        @extend .round-#{$key}-l-xl; 
       } 
-      &-no{ 
-        @extend .brad-#{$key}-r-no; 
+      &-none{ 
+        @extend .round-#{$key}-r-none; 
       } 
     } 
   } 
+}
+/* 
+  BORDER RADIUS 100% (CIRCLE) 
+*/
+@mixin classBorderRound($prefix){
+  .#{$prefix}-round{ 
+    border-radius: 100%; 
+  }
+}
+/*
+  TEXT RESETS
+*/
+@mixin classTextResets($prefix){
+  .#{$prefix}{
+    &-transform-none{
+      text-transform: initial;
+    }
+    &-white-space-normal{
+      white-space: normal;
+    }
+    &-decoration-none{
+      text-decoration: none;
+    }
+    &-weight-normal{
+      font-weight: normal;
+    }    
+  }
 }
 /*
   HIDDINGS
@@ -196,27 +223,6 @@
     z-index: -1; 
     overflow: hidden; 
   }
-}
-/* 
-  BORDER RADIUS 100% (CIRCLE) 
-*/
-@mixin classBorderRound(){
-  .brad-round{ 
-    border-radius: 100%; 
-  }
-}
-/* 
-  BACKGROUND NONE
-*/
-@mixin classBgNone(){
-  .bg-none{ 
-    background: none !important; 
-  } 
-}
-/*
-  AFTER AND BEFORE REMOVERS
-*/
-@mixin classAfBfRemover(){
   .af-none{
     &:after{
       content: none !important;
@@ -226,5 +232,5 @@
     &:before{
       content: none !important;
     }
-  }
+  }  
 }

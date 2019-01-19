@@ -6,71 +6,64 @@
 /* 
   PADDING 
 */ 
-@include hoz-and-vert('pad','padding', var(--hm-gutter));
-@include sizefy('pad-all', 'padding', var(--hm-gutter));
-@include sizefy('pad-top', 'padding-top', var(--hm-gutter));
-@include sizefy('pad-left', 'padding-left', var(--hm-gutter));
-@include sizefy('pad-right', 'padding-right', var(--hm-gutter));
-@include sizefy('pad-bottom', 'padding-bottom', var(--hm-gutter));
+@include hoz-and-vert('padding','padding', var(--hm-gutter));
+@include sizefy('padding-all', 'padding', var(--hm-gutter));
+@include sizefy('padding-top', 'padding-top', var(--hm-gutter));
+@include sizefy('padding-left', 'padding-left', var(--hm-gutter));
+@include sizefy('padding-right', 'padding-right', var(--hm-gutter));
+@include sizefy('padding-bottom', 'padding-bottom', var(--hm-gutter));
 /* 
   MARGINS 
 */ 
-@include hoz-and-vert('mar','margin', var(--hm-gutter));
-@include sizefy('mar-all', 'margin', var(--hm-gutter));
-@include sizefy('mar-top', 'margin-top', var(--hm-gutter));
-@include sizefy('mar-left', 'margin-left', var(--hm-gutter));
-@include sizefy('mar-right', 'margin-right', var(--hm-gutter));
-@include sizefy('mar-bottom', 'margin-bottom', var(--hm-gutter));
+@include hoz-and-vert('margin','margin', var(--hm-gutter));
+@include sizefy('margin-all', 'margin', var(--hm-gutter));
+@include sizefy('margin-top', 'margin-top', var(--hm-gutter));
+@include sizefy('margin-left', 'margin-left', var(--hm-gutter));
+@include sizefy('margin-right', 'margin-right', var(--hm-gutter));
+@include sizefy('margin-bottom', 'margin-bottom', var(--hm-gutter));
+/*
+  BORDER STYLE
+*/
+@include classBorderStyles('border');
 /* 
   BORDER RADIUS 
 */ 
-@include sizefy('brad-all', 'border-radius', var(--hm-gutter));
-@include sizefy('brad-top-l', 'border-top-left-radius', var(--hm-gutter));
-@include sizefy('brad-top-r', 'border-top-right-radius', var(--hm-gutter));
-@include sizefy('brad-bottom-l', 'border-bottom-left-radius', var(--hm-gutter));
-@include sizefy('brad-bottom-r', 'border-bottom-right-radius', var(--hm-gutter));
+@include sizefy('round-all', 'border-radius', var(--hm-gutter));
+@include sizefy('round-top-l', 'border-top-left-radius', var(--hm-gutter));
+@include sizefy('round-top-r', 'border-top-right-radius', var(--hm-gutter));
+@include sizefy('round-bottom-l', 'border-bottom-left-radius', var(--hm-gutter));
+@include sizefy('round-bottom-r', 'border-bottom-right-radius', var(--hm-gutter));
 /*
   BORDER RADIUS TOP & BOTTOM SHORTCUT &
   BORDER RADIUS 100% (rounded) &
-  BORDER STYLES
 */
-@include classBorderRadiusTB();
-@include classBorderRound();
-@include classBorderStyles();
-/* 
-  FONT WEIGHTS 
-*/ 
-$fontweights: normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900; 
-@include propertyToClass('fw-', 'font-weight', $fontweights);
+@include classBorderRound('round');
+@include classBorderRadiusTopBottom('round');
 /* 
   TEXT ALIGN &
   TEXT TRANSFORM &
   TEXT WHITE SPACE &
-  TEXT DECORATION
+  TEXT DECORATION &
+  TEXT - FONT WEIGHTS &
+  RESETINGS
 */
 $textaligns: left, right, center, justify; 
 @include propertyToClass('text-', 'text-align', $textaligns);
-$transforms: none, capitalize, uppercase, lowercase;
+$transforms: capitalize, uppercase, lowercase;
 @include propertyToClass('text-', 'text-transform', $transforms);
-$whitespaces: normal, pre, nowrap,;
+$whitespaces: pre, nowrap,;
 @include propertyToClass('text-', 'white-space', $whitespaces);
-$decorations: none, underline, overline, line-through, blink;
-@include propertyToClass('text-dec-', 'text-decoration', $decorations);
+$decorations: underline, overline, line-through, blink;
+@include propertyToClass('text-', 'text-decoration', $decorations);
+$fontweights: bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900; 
+@include propertyToClass('text-', 'font-weight', $fontweights);
+//
+@include classTextResets('text');
 /* 
   CURSOR TYPES 
 */ 
 $cursors: auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, not-allowed, all-scroll, col-resize, row-resize, n-resize, e-resize, s-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize; 
 @include propertyToClass('cursor-', 'cursor', $cursors);
-/* 
-  FLOAT
-*/ 
-$floats: none, left, right; 
-@include propertyToClass('float-', 'float', $floats);
-/* 
-  CLEAR
-*/ 
-$clears: left, right, both, none; 
-@include propertyToClass('clear-', 'clear', $clears);
 /*
   VISIBILITY
 */
@@ -106,8 +99,3 @@ $overflows: visible, hidden, scroll, auto, no-display, no-content;
   BG NONE
 */
 @include classHiddings();
-@include classBgNone();
-/*
-  AFTER AND BEFORE REMOVERS
-*/
-@include classAfBfRemover();

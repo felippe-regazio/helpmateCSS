@@ -7,6 +7,14 @@ body a{
   font-weight: 700;
   color: #39B7CD;
 }
+.header{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px;
+}
+.header::after{
+  content: 'This is a simple page to demonstrate the "Helpmate CSS" classes. The gutter default value is 14px. So the paddings, margins, etc will start on 14px and inc or dec from this. The base value for borders or any other property which requires a thin value to start will begin at 1px and be inc or dec from this.';
+}
 .content{
   font-family: sans-serif;
   padding: 14px;
@@ -27,18 +35,19 @@ body a{
   margin: 4px;
 }
 .square{
+  font-size: 14px;
   background-color: #cccccc;
   display: inline-block;
   height: 132px;
   width: 132px;
   margin: 0px;
 }
-.square.hey{  
-  font-weight: 700;
-  color: darkviolet;
-}
 .square.mar{
   margin: 8px;
+}
+.square.big{
+  height: 200px;
+  width: 200px;
 }
 .square div{  
   background-color: #dddddd; 
@@ -50,4 +59,17 @@ body a{
 }
 .square div.bgno{
   background-color: transparent;
+}
+.text{
+  padding: 8px;
+  background-color: #fffff1;
+  margin-bottom: 14px;
+}
+.hey{  
+  font-weight: 700;
+  color: darkviolet;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
 }

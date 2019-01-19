@@ -1,13 +1,13 @@
-var 
-  gulp    = require('gulp'),
-  sass    = require('gulp-sass'),
-  concat  = require('gulp-concat'),
-  minify  = require('gulp-clean-css'),
-  csscomb = require('gulp-csscomb'),
-  prefix  = require('gulp-autoprefixer'),
-  nobline = require('gulp-remove-empty-lines'),
-  stripC  = require('gulp-strip-css-comments');
-// BUILD
+const 
+  gulp     = require('gulp'),
+  sass     = require('gulp-sass'),
+  concat   = require('gulp-concat'),
+  minify   = require('gulp-clean-css'),
+  csscomb  = require('gulp-csscomb'),
+  prefix   = require('gulp-autoprefixer'),
+  nobline  = require('gulp-remove-empty-lines'),
+  stripC   = require('gulp-strip-css-comments');
+// HELPMATE BUILD
 gulp.task('build-dist', function(){
   return gulp.src('./src/helpmate.scss')
   .pipe(sass())
@@ -23,9 +23,9 @@ gulp.task('build-dist', function(){
   .pipe(concat('helpmate.min.css'))
   .pipe(gulp.dest('./dist'))
 });
-// WATCH
+// ALL WATCHINGS
 gulp.task('watch-src', function() {
   gulp.watch('./src/**/*.scss', gulp.series('build-dist'));
 });
-// START
-gulp.task('default', gulp.series('build-dist','watch-src'));
+// DEFAULT TASK
+gulp.task('default', gulp.series('build-dist', 'watch-src'));
