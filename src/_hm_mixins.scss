@@ -190,5 +190,35 @@
   CENTRALIZERS
 */
 @mixin centralizers($prefix){
-  
+  .#{$prefix}{
+    &\:auto{
+      display: block;
+      position: relative;
+      margin: 0 auto;
+    }
+    &\:flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &\:absolute{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-hori{
+      &\:flex{
+        @extend .#{$prefix}\:flex;
+        align-items: unset;  
+      }
+    }
+    &-vert{
+      &\:flex{
+        @extend .#{$prefix}\:flex;
+        justify-content: unset;
+      }
+    }
+  }
 }

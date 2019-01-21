@@ -56,24 +56,15 @@ $cursors: auto, default, none, context-menu, help, pointer, progress, wait, cell
 /*
   LIST
 */
-$liststyles: list-style-type, list-style-position, list-style-image, inherit;
-@include propertyToClass('list-style', 'list-style', $liststyles);
-$liststyletypes: none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-alpha, upper-alpha, lower-greek, lower-latin, upper-latin, hebrew, armenian, georgian, cjk-ideographic, hiragana, katakana, hiragana-iroha, katakana-iroha, inherit, initial, unset;
+$liststyletypes: circle, disc, square, armenian, cjk-ideographic, decimal, decimal-leading-zero, georgian, hebrew, hiragana, hiragana-iroha, katakana, katakana-iroha, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-greek, upper-latin, upper-roman, none, inherit;
 @include propertyToClass('list-style-type', 'list-style-type', $liststyletypes);
 /*
   BACKGROUND
 */
 $bgsizes: contain, cover, auto, inherit, initial, unset;
 @include propertyToClass('background-size', 'background-size', $bgsizes);
-$bgclips: border-box, padding-box, content-box, inherit;
-@include propertyToClass('background-clip', 'background-clip', $bgclips);
-$bgorigins: border-box, padding-box, content-box, inherit, initial, unset;
-@include propertyToClass('background-origin', 'background-origin', $bgorigins);
-/*
-  OBJECT-FIT
-*/
-$fits: fill, contain, cover, scale-down, none, inherit;
-@include propertyToClass('object-fit', 'object-fit', $fits);
+$bgpositions: bottom, center, left, right, top, initial, unset;
+@include propertyToClass('background-position', 'background-position', $bgpositions);
 /*
   OVERFLOW
 */
@@ -86,3 +77,7 @@ $overflows: visible, hidden, scroll, auto, inherit, initial, unset;
 */
 $visibilities: visible, hidden, collapse, inherit, initial, unset, inherit;
 @include propertyToClass('visibility', 'visibility', $visibilities);
+/*
+  CENTRALIZERS
+*/
+@include centralizers('center');

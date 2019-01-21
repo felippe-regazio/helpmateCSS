@@ -927,29 +927,20 @@
 .cursor\:inherit{
   cursor: inherit;
 }
-.list-style\:list-style-type{
-  list-style: list-style-type;
-}
-.list-style\:list-style-position{
-  list-style: list-style-position;
-}
-.list-style\:list-style-image{
-  list-style: list-style-image;
-}
-.list-style\:inherit{
-  list-style: inherit;
-}
-.list-style-type\:none{
-  list-style-type: none;
+.list-style-type\:circle{
+  list-style-type: circle;
 }
 .list-style-type\:disc{
   list-style-type: disc;
 }
-.list-style-type\:circle{
-  list-style-type: circle;
-}
 .list-style-type\:square{
   list-style-type: square;
+}
+.list-style-type\:armenian{
+  list-style-type: armenian;
+}
+.list-style-type\:cjk-ideographic{
+  list-style-type: cjk-ideographic;
 }
 .list-style-type\:decimal{
   list-style-type: decimal;
@@ -957,17 +948,26 @@
 .list-style-type\:decimal-leading-zero{
   list-style-type: decimal-leading-zero;
 }
-.list-style-type\:lower-roman{
-  list-style-type: lower-roman;
+.list-style-type\:georgian{
+  list-style-type: georgian;
 }
-.list-style-type\:upper-roman{
-  list-style-type: upper-roman;
+.list-style-type\:hebrew{
+  list-style-type: hebrew;
+}
+.list-style-type\:hiragana{
+  list-style-type: hiragana;
+}
+.list-style-type\:hiragana-iroha{
+  list-style-type: hiragana-iroha;
+}
+.list-style-type\:katakana{
+  list-style-type: katakana;
+}
+.list-style-type\:katakana-iroha{
+  list-style-type: katakana-iroha;
 }
 .list-style-type\:lower-alpha{
   list-style-type: lower-alpha;
-}
-.list-style-type\:upper-alpha{
-  list-style-type: upper-alpha;
 }
 .list-style-type\:lower-greek{
   list-style-type: lower-greek;
@@ -975,41 +975,26 @@
 .list-style-type\:lower-latin{
   list-style-type: lower-latin;
 }
+.list-style-type\:lower-roman{
+  list-style-type: lower-roman;
+}
+.list-style-type\:upper-alpha{
+  list-style-type: upper-alpha;
+}
+.list-style-type\:upper-greek{
+  list-style-type: upper-greek;
+}
 .list-style-type\:upper-latin{
   list-style-type: upper-latin;
 }
-.list-style-type\:hebrew{
-  list-style-type: hebrew;
+.list-style-type\:upper-roman{
+  list-style-type: upper-roman;
 }
-.list-style-type\:armenian{
-  list-style-type: armenian;
-}
-.list-style-type\:georgian{
-  list-style-type: georgian;
-}
-.list-style-type\:cjk-ideographic{
-  list-style-type: cjk-ideographic;
-}
-.list-style-type\:hiragana{
-  list-style-type: hiragana;
-}
-.list-style-type\:katakana{
-  list-style-type: katakana;
-}
-.list-style-type\:hiragana-iroha{
-  list-style-type: hiragana-iroha;
-}
-.list-style-type\:katakana-iroha{
-  list-style-type: katakana-iroha;
+.list-style-type\:none{
+  list-style-type: none;
 }
 .list-style-type\:inherit{
   list-style-type: inherit;
-}
-.list-style-type\:initial{
-  list-style-type: initial;
-}
-.list-style-type\:unset{
-  list-style-type: unset;
 }
 .background-size\:contain{
   background-size: contain;
@@ -1029,59 +1014,26 @@
 .background-size\:unset{
   background-size: unset;
 }
-.background-clip\:border-box{
-  background-clip: border-box;
+.background-position\:bottom{
+  background-position: bottom;
 }
-.background-clip\:padding-box{
-  background-clip: padding-box;
+.background-position\:center{
+  background-position: center;
 }
-.background-clip\:content-box{
-  background-clip: content-box;
+.background-position\:left{
+  background-position: left;
 }
-.background-clip\:inherit{
-  background-clip: inherit;
+.background-position\:right{
+  background-position: right;
 }
-.background-origin\:border-box{
-  background-origin: border-box;
+.background-position\:top{
+  background-position: top;
 }
-.background-origin\:padding-box{
-  background-origin: padding-box;
+.background-position\:initial{
+  background-position: initial;
 }
-.background-origin\:content-box{
-  background-origin: content-box;
-}
-.background-origin\:inherit{
-  background-origin: inherit;
-}
-.background-origin\:initial{
-  background-origin: initial;
-}
-.background-origin\:unset{
-  background-origin: unset;
-}
-.object-fit\:fill{
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.object-fit\:contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.object-fit\:cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.object-fit\:scale-down{
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-.object-fit\:none{
-  -o-object-fit: none;
-     object-fit: none;
-}
-.object-fit\:inherit{
-  -o-object-fit: inherit;
-     object-fit: inherit;
+.background-position\:unset{
+  background-position: unset;
 }
 .overflow\:visible{
   overflow: visible;
@@ -1166,4 +1118,41 @@
 }
 .visibility\:inherit{
   visibility: inherit;
+}
+.center\:auto{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+.center\:flex,
+.center-hori\:flex,
+.center-vert\:flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.center\:absolute{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.center-hori\:flex{
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+.center-vert\:flex{
+  -webkit-box-pack: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
 }

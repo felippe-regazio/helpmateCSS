@@ -1,3 +1,6 @@
+width:max  = max-width:100%; / auto / none
+height:same
+
 classes to center
 responsive hidden and show by breakpoints
 
