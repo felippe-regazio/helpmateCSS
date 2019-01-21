@@ -9,8 +9,10 @@
 */
 @mixin propertyToClass($prefix, $prop, $values){
   @each $key in $values{ 
-    .#{$prefix}#{$key}{ 
-      #{$prop}: $key; 
+    .#{$prefix}{ 
+      &\:#{$key}{
+        #{$prop}: $key; 
+      }
     } 
   }  
 }
@@ -21,22 +23,22 @@
 @mixin sizefy($class, $prop, $initialValue){ 
   .#{$class}{ 
     #{$prop}: $initialValue; 
-    &-xs{ 
+    &\:xs{ 
       #{$prop}: calc(#{$initialValue} / 4); 
     } 
-    &-sm{ 
+    &\:sm{ 
       #{$prop}: calc(#{$initialValue} / 2); 
     } 
-    &-md{ 
+    &\:md{ 
       #{$prop}: calc(#{$initialValue} * 2); 
     }
-    &-lg{ 
+    &\:lg{ 
       #{$prop}: calc(#{$initialValue} * 3); 
     } 
-    &-xl{ 
+    &\:xl{ 
       #{$prop}: calc(#{$initialValue} * 4); 
     }
-    &-none{ 
+    &\:none{ 
       #{$prop}: 0;
     } 
   } 
@@ -51,54 +53,54 @@
   .#{$prefix}-hori{ 
     #{$prop}-left: $initialValue; 
     #{$prop}-right: $initialValue; 
-    &-xs{ 
+    &\:xs{ 
       #{$prop}-left: calc(#{$initialValue} / 3); 
       #{$prop}-right: calc(#{$initialValue} / 3); 
     } 
-    &-sm{ 
+    &\:sm{ 
       #{$prop}-left: calc(#{$initialValue} / 2); 
       #{$prop}-right: calc(#{$initialValue} / 2); 
     } 
-    &-md{ 
+    &\:md{ 
       #{$prop}-left: calc(#{$initialValue} * 2); 
       #{$prop}-right: calc(#{$initialValue} * 2); 
     } 
-    &-lg{ 
+    &\:lg{ 
       #{$prop}-left: calc(#{$initialValue} * 3); 
       #{$prop}-right: calc(#{$initialValue} * 3); 
     } 
-    &-xl{ 
+    &\:xl{ 
       #{$prop}-left: calc(#{$initialValue} * 4); 
       #{$prop}-right: calc(#{$initialValue} * 4); 
     } 
-    &-none{ 
+    &\:none{ 
       #{$prop}: 0; 
     } 
   } 
   .#{$prefix}-vert{ 
     #{$prop}-top: $initialValue; 
     #{$prop}-bottom: $initialValue; 
-    &-xs{ 
+    &\:xs{ 
       #{$prop}-top: calc(#{$initialValue} / 3); 
       #{$prop}-bottom: calc(#{$initialValue} / 3); 
     } 
-    &-sm{ 
+    &\:sm{ 
       #{$prop}-top: calc(#{$initialValue} / 2); 
       #{$prop}-bottom: calc(#{$initialValue} / 2); 
     } 
-    &-md{ 
+    &\:md{ 
       #{$prop}-top: calc(#{$initialValue} * 2); 
       #{$prop}-bottom: calc(#{$initialValue} * 2); 
     } 
-    &-lg{ 
+    &\:lg{ 
       #{$prop}-top: calc(#{$initialValue} * 3); 
       #{$prop}-bottom: calc(#{$initialValue} * 3); 
     } 
-    &-xl{ 
+    &\:xl{ 
       #{$prop}-top: calc(#{$initialValue} * 4); 
       #{$prop}-bottom: calc(#{$initialValue} * 4); 
     } 
-    &-none{ 
+    &\:none{ 
       #{$prop}: 0; 
     } 
   } 
@@ -111,25 +113,27 @@
 @mixin classBorderStyles($prefix){
   $bordstyles: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset; 
   @each $key in $bordstyles{ 
-    .#{$prefix}-#{$key}{ 
-      border-style: #{$key}; 
-      &-top{ 
+    .#{$prefix}{ 
+      &\:#{$key}{
+        border-style: #{$key}; 
+      }
+      &-top\:#{$key}{ 
         border-top-style: $key; 
       } 
-      &-right{ 
+      &-right\:#{$key}{ 
         border-right-style: $key; 
       } 
-      &-left{ 
+      &-left\:#{$key}{ 
         border-left-style: $key; 
       } 
-      &-bottom{ 
+      &-bottom\:#{$key}{
         border-bottom-style: $key; 
       } 
-      &-hori{ 
+      &-hori\:#{$key}{ 
         border-top-style: $key; 
         border-bottom-style: $key; 
       } 
-      &-vert{ 
+      &-vert\:#{$key}{ 
         border-right-style: $key; 
         border-left-style: $key; 
       } 
@@ -145,30 +149,31 @@
   $shortrounds: top, bottom; 
   @each $key in $shortrounds{ 
     .#{$prefix}-#{$key}{ 
-      @extend .round-#{$key}-r; 
-      @extend .round-#{$key}-l; 
-      &-xs{ 
-        @extend .round-#{$key}-r-xs; 
-        @extend .round-#{$key}-l-xs; 
+      @extend .round-#{$key}-right; 
+      @extend .round-#{$key}-left; 
+      &\:xs{ 
+        @extend .round-#{$key}-right\:xs; 
+        @extend .round-#{$key}-left\:xs; 
       } 
-      &-sm{ 
-        @extend .round-#{$key}-r-sm; 
-        @extend .round-#{$key}-l-sm; 
+      &\:sm{ 
+        @extend .round-#{$key}-right\:sm; 
+        @extend .round-#{$key}-left\:sm; 
       } 
-      &-md{ 
-        @extend .round-#{$key}-r-md; 
-        @extend .round-#{$key}-l-md; 
+      &\:md{ 
+        @extend .round-#{$key}-right\:md; 
+        @extend .round-#{$key}-left\:md; 
       } 
-      &-lg{ 
-        @extend .round-#{$key}-r-lg; 
-        @extend .round-#{$key}-l-lg; 
+      &\:lg{ 
+        @extend .round-#{$key}-right\:lg; 
+        @extend .round-#{$key}-left\:lg; 
       } 
-      &-xl{ 
-        @extend .round-#{$key}-r-xl; 
-        @extend .round-#{$key}-l-xl; 
+      &\:xl{ 
+        @extend .round-#{$key}-right\:xl; 
+        @extend .round-#{$key}-left\:xl; 
       } 
-      &-none{ 
-        @extend .round-#{$key}-r-none; 
+      &\:none{ 
+        @extend .round-#{$key}-right\:none;
+        @extend .round-#{$key}-left\:none;
       } 
     } 
   } 
@@ -176,61 +181,8 @@
 /* 
   BORDER RADIUS 100% (CIRCLE) 
 */
-@mixin classBorderRound($prefix){
-  .#{$prefix}-round{ 
+@mixin classBorderRadiusCircle($prefix){
+  .#{$prefix}-circle{ 
     border-radius: 100%; 
   }
-}
-/*
-  TEXT RESETS
-*/
-@mixin classTextResets($prefix){
-  .#{$prefix}{
-    &-transform-none{
-      text-transform: initial;
-    }
-    &-white-space-normal{
-      white-space: normal;
-    }
-    &-decoration-none{
-      text-decoration: none;
-    }
-    &-weight-normal{
-      font-weight: normal;
-    }    
-  }
-}
-/*
-  HIDDINGS
-*/
-@mixin classHiddings(){
-  .invisible{ 
-    visibility: hidden; 
-  } 
-  .hidden{ 
-    display: none; 
-  } 
-  .transparent{ 
-    opacity: 0; 
-  } 
-  .offscreen{ 
-    position: fixed; 
-    opacity: 0; 
-    top: -100%; 
-    left: -100%; 
-    height: 0; 
-    width: 0; 
-    z-index: -1; 
-    overflow: hidden; 
-  }
-  .af-none{
-    &:after{
-      content: none !important;
-    }
-  }
-  .bf-none{
-    &:before{
-      content: none !important;
-    }
-  }  
 }
