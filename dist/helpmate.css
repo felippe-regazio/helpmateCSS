@@ -685,6 +685,18 @@
 .round-circle{
   border-radius: 100%;
 }
+.user-select\:none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.user-select\:text{
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
 .text-align\:left{
   text-align: left;
 }
@@ -927,6 +939,12 @@
 .cursor\:inherit{
   cursor: inherit;
 }
+.pointer-events\:auto{
+  pointer-events: auto;
+}
+.pointer-events\:none{
+  pointer-events: none;
+}
 .list-style-type\:circle{
   list-style-type: circle;
 }
@@ -1118,6 +1136,18 @@
 }
 .visibility\:inherit{
   visibility: inherit;
+}
+.resize\:none{
+  resize: none;
+}
+.resize\:both{
+  resize: both;
+}
+.resize\:vertical{
+  resize: vertical;
+}
+.resize\:horizontal{
+  resize: horizontal;
 }
 .center\:auto{
   display: block;

@@ -38,6 +38,8 @@
 /* 
   TEXT
 */
+$userselects: none, text; 
+@include propertyToClass('user-select', 'user-select', $userselects);
 $textaligns: left, right, center, justify, unset, inherit; 
 @include propertyToClass('text-align', 'text-align', $textaligns);
 $transforms: capitalize, uppercase, lowercase, initial, inherit, none, unset;
@@ -53,6 +55,11 @@ $fontweights: bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900
 */ 
 $cursors: auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, notowed, all-scroll, col-resize, row-resize, n-resize, e-resize, s-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize, inherit; 
 @include propertyToClass('cursor', 'cursor', $cursors);
+/*
+  POINTER EVENTS
+*/
+$pointerevs: auto, none;
+@include propertyToClass('pointer-events', 'pointer-events', $pointerevs);
 /*
   LIST
 */
@@ -77,6 +84,11 @@ $overflows: visible, hidden, scroll, auto, inherit, initial, unset;
 */
 $visibilities: visible, hidden, collapse, inherit, initial, unset, inherit;
 @include propertyToClass('visibility', 'visibility', $visibilities);
+/*
+  RESIZE
+*/
+$resizers: none, both, vertical, horizontal;
+@include propertyToClass('resize', 'resize', $resizers);
 /*
   CENTRALIZERS
 */
