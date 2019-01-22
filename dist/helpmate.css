@@ -1156,3 +1156,41 @@
   -ms-flex-pack: unset;
   justify-content: unset;
 }
+.hidden{
+  display: none;
+}
+@media screen and (max-width: 319px){
+  .hidden\:mobile-sm{
+    display: none;
+  }
+}
+@media screen and (max-width: 374px){
+  .hidden\:mobile-md{
+    display: none;
+  }
+}
+@media screen and (max-width: 424px){
+  .hidden:\mobile{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .hidden\:tablet{
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px){
+  .hidden\:laptop{
+    display: none;
+  }
+}
+@media screen and (max-width: 1439px){
+  .hidden:\:destop{
+    display: none;
+  }
+}
+@media screen and (max-width: 2560px){
+  .hidden:\desktop-lg{
+    display: none;
+  }
+}

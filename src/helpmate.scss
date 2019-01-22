@@ -81,3 +81,7 @@ $visibilities: visible, hidden, collapse, inherit, initial, unset, inherit;
   CENTRALIZERS
 */
 @include centralizers('center');
+/*
+  CLASS HIDDEN
+*/
+@include classHidings('hidden');

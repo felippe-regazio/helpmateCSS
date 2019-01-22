@@ -222,3 +222,37 @@
     }
   }
 }
+/*
+  HIDDEN
+*/
+@mixin hideAt($breakpoint){
+  @media screen and(max-width: $breakpoint){
+    display: none;
+  }
+}
+@mixin classHidings($prefix){
+  .#{$prefix}{
+    display: none;
+    &\:mobile-sm{
+      @include hideAt(319px);
+    }
+    &\:mobile-md{
+      @include hideAt(374px);
+    }
+    &:\mobile{
+      @include hideAt(424px);
+    }
+    &\:tablet{
+      @include hideAt(767px);
+    }
+    &\:laptop{
+      @include hideAt(1023px);
+    }
+    &:\:destop{
+      @include hideAt(1439px);
+    }
+    &:\desktop-lg{
+      @include hideAt(2560px);
+    }
+  }
+}
