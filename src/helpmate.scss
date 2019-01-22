@@ -81,6 +81,10 @@ $visibilities: visible, hidden, collapse, inherit, initial, unset, inherit;
   CENTRALIZERS
 */
 @include centralizers('center');
+/* 
+  WIDTH AND HEIGHT LIMITS
+*/
+@include whLimiters();
 /*
   CLASS HIDDEN
 */

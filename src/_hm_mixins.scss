@@ -222,6 +222,28 @@
     }
   }
 }
+/* 
+  WIDTH AND HEIGHT LIMITS
+*/
+@mixin whLimiters(){
+  $props: height width;
+  @each $prop in $props{
+    .#{$prop}{
+      &\:full{
+        #{$prop}:100%;
+      }
+      &\:auto{
+        #{$prop}:auto; 
+      }
+      &\:none{
+        #{$prop}:0;
+      }
+      &\:max-100{
+        max-#{$prop}:100%;
+      }
+    }
+  }
+}
 /*
   BREAKPOINS
 */
