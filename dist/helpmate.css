@@ -1157,40 +1157,82 @@
   justify-content: unset;
 }
 .hidden{
-  display: none;
+  display: none !important;
 }
-@media screen and (max-width: 319px){
+.hidden\:offscreen{
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: fixed !important;
+  z-index: -1 !important;
+  top: -100vh !important;
+}
+@media screen and (max-width: 320px){
   .hidden\:mobile-sm{
-    display: none;
+    display: none !important;
   }
 }
-@media screen and (max-width: 374px){
+@media screen and (max-width: 320px){
+  .hidden\:mobile-sm-only{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 375px){
   .hidden\:mobile-md{
-    display: none;
+    display: none !important;
   }
 }
-@media screen and (max-width: 424px){
-  .hidden:\mobile{
-    display: none;
+@media screen and (min-width: 320px) and (max-width: 375px){
+  .hidden\:mobile-md-only{
+    display: none !important;
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 425px){
+  .hidden\:mobile{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px){
+  .hidden\:mobile-only{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px){
   .hidden\:tablet{
-    display: none;
+    display: none !important;
   }
 }
-@media screen and (max-width: 1023px){
+@media screen and (min-width: 425px) and (max-width: 768px){
+  .hidden\:tablet-only{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px){
   .hidden\:laptop{
-    display: none;
+    display: none !important;
   }
 }
-@media screen and (max-width: 1439px){
-  .hidden:\:destop{
-    display: none;
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .hidden\:laptop-only{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1440px){
+  .hidden\:desktop{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+  .hidden\:desktop-only{
+    display: none !important;
   }
 }
 @media screen and (max-width: 2560px){
-  .hidden:\desktop-lg{
-    display: none;
+  .hidden\:desktop-lg{
+    display: none !important;
+  }
+}
+@media screen and (min-width: 2560px){
+  .hidden\:desktop-lg-only{
+    display: none !important;
   }
 }

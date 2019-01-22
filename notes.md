@@ -1,8 +1,11 @@
-width:max  = max-width:100%; / auto / none
-height:same
-
-classes to center
-responsive hidden and show by breakpoints
+width:full
+height:full
+width:auto
+height:auto
+width:none
+height:none
+width:max-100
+height:max-100
 
 .no-border
 
@@ -71,38 +74,4 @@ It removes the opacity from the element
       font-weight: normal;
     }    
   }
-}
-/*
-  HIDDINGS
-*/
-@mixin Hiddings(){
-  .invisible{ 
-    visibility: hidden; 
-  } 
-  .hidden{ 
-    display: none; 
-  } 
-  .transparent{ 
-    opacity: 0; 
-  } 
-  .offscreen{ 
-    position: fixed; 
-    opacity: 0; 
-    top: -100%; 
-    left: -100%; 
-    height: 0; 
-    width: 0; 
-    z-index: -1; 
-    overflow: hidden; 
-  }
-  .after-none{
-    &:after{
-      content: none !important;
-    }
-  }
-  .before-none{
-    &:before{
-      content: none !important;
-    }
-  }  
 }

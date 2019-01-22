@@ -223,36 +223,82 @@
   }
 }
 /*
-  HIDDEN
+  BREAKPOINS
+*/
+$mobile-sm: 320px;
+$mobile-md: 375px;
+$mobile: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+$desktop-lg: 2560px;
+/*
+  HIDINGS
 */
 @mixin hideAt($breakpoint){
   @media screen and(max-width: $breakpoint){
-    display: none;
+    display: none !important;
+  }
+}
+@mixin hideFrom($min, $max){
+  @media screen and (min-width: $min) and (max-width: $max){
+    display: none !important;
   }
 }
 @mixin classHidings($prefix){
   .#{$prefix}{
-    display: none;
+    display: none !important;
+    &\:offscreen{
+      visibility: hidden !important;
+      opacity: 0 !important;
+      display: fixed !important;
+      z-index: -1 !important;
+      top: -100vh !important;
+    }
+    // by breakpoint
     &\:mobile-sm{
-      @include hideAt(319px);
+      @include hideAt($mobile-sm);
+      &-only{
+        @include hideAt($mobile-sm);
+      }
     }
     &\:mobile-md{
-      @include hideAt(374px);
+      @include hideAt($mobile-md);
+      &-only{
+        @include hideFrom($mobile-sm, $mobile-md);
+      }
     }
-    &:\mobile{
-      @include hideAt(424px);
+    &\:mobile{
+      @include hideAt($mobile);
+      &-only{
+        @include hideFrom($mobile-md, $mobile);
+      }
     }
     &\:tablet{
-      @include hideAt(767px);
+      @include hideAt($tablet);
+      &-only{
+        @include hideFrom($mobile, $tablet);
+      }
     }
     &\:laptop{
-      @include hideAt(1023px);
+      @include hideAt($laptop);
+      &-only{
+        @include hideFrom($tablet, $laptop);
+      }      
     }
-    &:\:destop{
-      @include hideAt(1439px);
+    &\:desktop{
+      @include hideAt($desktop);
+      &-only{
+        @include hideFrom($laptop, $desktop);
+      }      
     }
-    &:\desktop-lg{
-      @include hideAt(2560px);
+    &\:desktop-lg{
+      @include hideAt($desktop-lg);
+      &-only{
+        @media screen and(min-width: $desktop-lg){
+          display: none !important;
+        }
+      }      
     }
   }
 }

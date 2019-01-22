@@ -1,5 +1,6 @@
 const 
   gulp     = require('gulp'),
+  gzip     = require('gulp-gzip'),
   sass     = require('gulp-sass'),
   concat   = require('gulp-concat'),
   minify   = require('gulp-clean-css'),
@@ -21,6 +22,9 @@ gulp.task('build-dist', function(){
   // minified
   .pipe(minify())
   .pipe(concat('helpmate.min.css'))
+  .pipe(gulp.dest('./dist'))
+  // gziped
+  .pipe(gzip())
   .pipe(gulp.dest('./dist'))
 });
 // ALL WATCHINGS

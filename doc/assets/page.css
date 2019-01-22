@@ -8,12 +8,9 @@ body a{
   color: #39B7CD;
 }
 .header{
-  max-width: 1200px;
+  max-width: 1226px;
   margin: 0 auto;
   padding: 14px;
-}
-.header::after{
-  content: 'This is a simple page to demonstrate the "Helpmate CSS" classes. The gutter default value is 14px. So the paddings, margins, etc will start on 14px and inc or dec from this. The base value for borders or any other property which requires a thin value to start will begin at 1px and be inc or dec from this.';
 }
 .content{
   font-family: sans-serif;
