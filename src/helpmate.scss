@@ -1,103 +1,104 @@
 /*
-  GUTTER CONFIG
+ GUTTER CONFIG
 */
 :root{ --hm-gutter: 14px; }
 /*
-  MIXINS
+ MIXINS
 */
 @import 'hm_mixins';
 /* 
-  PADDING 
+ PADDING 
 */
-@include hoz-and-vert('padding','padding', var(--hm-gutter));
-@include sizefy('padding', 'padding', var(--hm-gutter));
-@include sizefy('padding-top', 'padding-top', var(--hm-gutter));
-@include sizefy('padding-left', 'padding-left', var(--hm-gutter));
-@include sizefy('padding-right', 'padding-right', var(--hm-gutter));
-@include sizefy('padding-bottom', 'padding-bottom', var(--hm-gutter));
+@include hoz-and-vert('pad','padding', var(--hm-gutter));
+@include sizefy('pad', 'padding', var(--hm-gutter));
+@include sizefy('pad-t', 'padding-top', var(--hm-gutter));
+@include sizefy('pad-l', 'padding-left', var(--hm-gutter));
+@include sizefy('pad-r', 'padding-right', var(--hm-gutter));
+@include sizefy('pad-b', 'padding-bottom', var(--hm-gutter));
 /* 
-  MARGIN
+ MARGIN
 */ 
-@include hoz-and-vert('margin','margin', var(--hm-gutter));
-@include sizefy('margin', 'margin', var(--hm-gutter));
-@include sizefy('margin-top', 'margin-top', var(--hm-gutter));
-@include sizefy('margin-left', 'margin-left', var(--hm-gutter));
-@include sizefy('margin-right', 'margin-right', var(--hm-gutter));
-@include sizefy('margin-bottom', 'margin-bottom', var(--hm-gutter));
+@include hoz-and-vert('mar','margin', var(--hm-gutter));
+@include sizefy('mar', 'margin', var(--hm-gutter));
+@include sizefy('mar-t', 'margin-top', var(--hm-gutter));
+@include sizefy('mar-l', 'margin-left', var(--hm-gutter));
+@include sizefy('mar-r', 'margin-right', var(--hm-gutter));
+@include sizefy('mar-b', 'margin-bottom', var(--hm-gutter));
 /*
-  BORDER
+ BORDER
 */
-@include classBorderStyles('border-style');
-@include sizefy('round', 'border-radius', var(--hm-gutter));
-@include sizefy('round-top-left', 'border-top-left-radius', var(--hm-gutter));
-@include sizefy('round-top-right', 'border-top-right-radius', var(--hm-gutter));
-@include sizefy('round-bottom-left', 'border-bottom-left-radius', var(--hm-gutter));
-@include sizefy('round-bottom-right', 'border-bottom-right-radius', var(--hm-gutter));
-@include classBorderRadiusCircle('round');
-@include classBorderRadiusTopBottom('round');
+@include classBorderStyles('bst');
+@include sizefy('brd', 'border-radius', var(--hm-gutter));
+@include sizefy('brd-tl', 'border-top-left-radius', var(--hm-gutter));
+@include sizefy('brd-tr', 'border-top-right-radius', var(--hm-gutter));
+@include sizefy('brd-bl', 'border-bottom-left-radius', var(--hm-gutter));
+@include sizefy('brd-br', 'border-bottom-right-radius', var(--hm-gutter));
+@include classBorderRadiusCircle('brd');
+@include classBorderRadiusTopBottom('brd');
 /* 
-  TEXT
+ TEXT
 */
 $userselects: none, text; 
-@include propertyToClass('user-select', 'user-select', $userselects);
-$textaligns: left, right, center, justify, unset, inherit; 
-@include propertyToClass('text-align', 'text-align', $textaligns);
-$transforms: capitalize, uppercase, lowercase, initial, inherit, none, unset;
-@include propertyToClass('text-transform', 'text-transform', $transforms);
-$whitespaces: pre, inherit, initial, normal, nowrap, pre-line, pre-wrap, unset;
-@include propertyToClass('white-space', 'white-space', $whitespaces);
-$decorations: underline, overline, line-through, blink, dashed, dotted, double, inherit, initial, none, solid, unset, wavy;
-@include propertyToClass('text-decoration', 'text-decoration', $decorations);
+@include propertyToClass('usl', 'user-select', $userselects);
+$whitespaces: pre,normal, nowrap, pre-line, pre-wrap, unset;
+@include propertyToClass('ws', 'white-space', $whitespaces);
+$textaligns: left, right, center, justify,  ; 
+@include propertyToClass('ta', 'text-align', $textaligns);
+$transforms: capitalize, uppercase, lowercase,none, unset;
+@include propertyToClass('tt', 'text-transform', $transforms);
+$decorations: underline, overline, line-through, blink, dashed, dotted, double,none, solid, wavy;
+@include propertyToClass('td', 'text-decoration', $decorations);
 $fontweights: bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900; 
-@include propertyToClass('font-weight', 'font-weight', $fontweights);
+@include propertyToClass('fw', 'font-weight', $fontweights);
 /* 
-  CURSOR
+ CURSOR
 */ 
-$cursors: auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, notowed, all-scroll, col-resize, row-resize, n-resize, e-resize, s-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize, inherit; 
-@include propertyToClass('cursor', 'cursor', $cursors);
+$cursors: auto, default, none, context-menu, help, pointer, progress, wait, cell, crosshair, text, vertical-text, alias, copy, move, no-drop, notowed, all-scroll, col-resize, row-resize, n-resize, e-resize, s-resize, w-resize, ns-resize, ew-resize, ne-resize, nw-resize, se-resize, sw-resize, nesw-resize, nwse-resize; 
+@include propertyToClass('cur', 'cursor', $cursors);
 /*
-  POINTER EVENTS
+ POINTER EVENTS
 */
 $pointerevs: auto, none;
-@include propertyToClass('pointer-events', 'pointer-events', $pointerevs);
+@include propertyToClass('pev', 'pointer-events', $pointerevs);
 /*
-  LIST
+ LIST
 */
-$liststyletypes: circle, disc, square, armenian, cjk-ideographic, decimal, decimal-leading-zero, georgian, hebrew, hiragana, hiragana-iroha, katakana, katakana-iroha, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-greek, upper-latin, upper-roman, none, inherit;
-@include propertyToClass('list-style-type', 'list-style-type', $liststyletypes);
+$liststyletypes: circle, disc, square, armenian, cjk-ideographic, decimal, decimal-leading-zero, georgian, hebrew, hiragana, hiragana-iroha, katakana, katakana-iroha, lower-alpha, lower-greek, lower-latin, lower-roman, upper-alpha, upper-greek, upper-latin, upper-roman, none;
+@include propertyToClass('lst', 'list-style-type', $liststyletypes);
 /*
-  BACKGROUND
+ BACKGROUND
 */
-$bgsizes: contain, cover, auto, inherit, initial, unset;
-@include propertyToClass('background-size', 'background-size', $bgsizes);
-$bgpositions: bottom, center, left, right, top, initial, unset;
-@include propertyToClass('background-position', 'background-position', $bgpositions);
+$bgsizes: contain, cover, auto;
+@include propertyToClass('bg', 'background-size', $bgsizes);
+$bgpositions: bottom, center, left, right, top;
+@include propertyToClass('bg', 'background-position', $bgpositions);
 /*
-  OVERFLOW
+ OVERFLOW
 */
-$overflows: visible, hidden, scroll, auto, inherit, initial, unset;
-@include propertyToClass('overflow', 'overflow', $overflows);
-@include propertyToClass('overflow-y', 'overflow-x', $overflows);
-@include propertyToClass('overflow-y', 'overflow-y', $overflows);
+$overflows: visible, hidden, scroll, auto;
+@include propertyToClass('ovf', 'overflow', $overflows);
+@include propertyToClass('ovf-y', 'overflow-x', $overflows);
+@include propertyToClass('ovf-y', 'overflow-y', $overflows);
 /*
-  VISIBILITY
+ VISIBILITY
 */
-$visibilities: visible, hidden, collapse, inherit, initial, unset, inherit;
-@include propertyToClass('visibility', 'visibility', $visibilities);
+$visibilities: visible, hidden, collapse;
+@include propertyToClass('vis', 'visibility', $visibilities);
 /*
-  RESIZE
+ RESIZE
 */
 $resizers: none, both, vertical, horizontal;
-@include propertyToClass('resize', 'resize', $resizers);
+@include propertyToClass('rs', 'resize', $resizers);
 /*
-  CENTRALIZERS
+ CENTRALIZERS
 */
-@include centralizers('center');
+@include centralizers('cen');
 /* 
-  WIDTH AND HEIGHT LIMITS
+ WIDTH AND HEIGHT LIMITS
 */
-@include whLimiters();
+@include whLimiters('w', 'width');
+@include whLimiters('h', 'height');
 /*
-  CLASS HIDDEN
+ CLASS HIDDEN
 */
-@include classHidings('hidden');
+@include classHidings('no');

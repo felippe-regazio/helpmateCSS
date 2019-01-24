@@ -14,14 +14,14 @@
         #{$prop}: $key; 
       }
     } 
-  }  
+  }
 }
 /* 
   SIZEFY 
   Factory mixin Used to create sized prop class forks 
 */ 
 @mixin sizefy($class, $prop, $initialValue){ 
-  .#{$class}{ 
+  .#{$class}{
     #{$prop}: $initialValue; 
     &\:xs{ 
       #{$prop}: calc(#{$initialValue} / 4); 
@@ -50,7 +50,7 @@
   You can bind sm, md, log, xl, no size mods on class 
 */ 
 @mixin hoz-and-vert($prefix, $prop, $initialValue){ 
-  .#{$prefix}-hori{ 
+  .#{$prefix}-hz{ 
     #{$prop}-left: $initialValue; 
     #{$prop}-right: $initialValue; 
     &\:xs{ 
@@ -77,7 +77,7 @@
       #{$prop}: 0; 
     } 
   } 
-  .#{$prefix}-vert{ 
+  .#{$prefix}-ve{ 
     #{$prop}-top: $initialValue; 
     #{$prop}-bottom: $initialValue; 
     &\:xs{ 
@@ -117,26 +117,26 @@
       &\:#{$key}{
         border-style: #{$key}; 
       }
-      &-top\:#{$key}{ 
+      &-t\:#{$key}{ 
         border-top-style: $key; 
       } 
-      &-right\:#{$key}{ 
+      &-r\:#{$key}{ 
         border-right-style: $key; 
       } 
-      &-left\:#{$key}{ 
+      &-l\:#{$key}{ 
         border-left-style: $key; 
       } 
-      &-bottom\:#{$key}{
+      &-b\:#{$key}{
         border-bottom-style: $key; 
       } 
-      &-hori\:#{$key}{ 
+      &-hz\:#{$key}{ 
         border-top-style: $key; 
         border-bottom-style: $key; 
       } 
-      &-vert\:#{$key}{ 
+      &-ve\:#{$key}{ 
         border-right-style: $key; 
         border-left-style: $key; 
-      } 
+      }
     } 
   }
 }
@@ -146,34 +146,34 @@
   to be used as round-top[sizes] and round-bottom[sizes] 
 */
 @mixin classBorderRadiusTopBottom($prefix){
-  $shortrounds: top, bottom; 
+  $shortrounds: t, b; 
   @each $key in $shortrounds{ 
     .#{$prefix}-#{$key}{ 
-      @extend .round-#{$key}-right; 
-      @extend .round-#{$key}-left; 
-      &\:xs{ 
-        @extend .round-#{$key}-right\:xs; 
-        @extend .round-#{$key}-left\:xs; 
+      @extend .#{$prefix}-#{$key}r; 
+      @extend .#{$prefix}-#{$key}l; 
+      &\:xs{
+        @extend .#{$prefix}-#{$key}r\:xs; 
+        @extend .#{$prefix}-#{$key}l\:xs; 
       } 
       &\:sm{ 
-        @extend .round-#{$key}-right\:sm; 
-        @extend .round-#{$key}-left\:sm; 
+        @extend .#{$prefix}-#{$key}r\:sm; 
+        @extend .#{$prefix}-#{$key}l\:sm; 
       } 
       &\:md{ 
-        @extend .round-#{$key}-right\:md; 
-        @extend .round-#{$key}-left\:md; 
+        @extend .#{$prefix}-#{$key}r\:md; 
+        @extend .#{$prefix}-#{$key}l\:md; 
       } 
       &\:lg{ 
-        @extend .round-#{$key}-right\:lg; 
-        @extend .round-#{$key}-left\:lg; 
+        @extend .#{$prefix}-#{$key}r\:lg; 
+        @extend .#{$prefix}-#{$key}l\:lg; 
       } 
       &\:xl{ 
-        @extend .round-#{$key}-right\:xl; 
-        @extend .round-#{$key}-left\:xl; 
+        @extend .#{$prefix}-#{$key}r\:xl; 
+        @extend .#{$prefix}-#{$key}l\:xl; 
       } 
       &\:none{ 
-        @extend .round-#{$key}-right\:none;
-        @extend .round-#{$key}-left\:none;
+        @extend .#{$prefix}-#{$key}r\:none;
+        @extend .#{$prefix}-#{$key}l\:none;
       } 
     } 
   } 
@@ -182,7 +182,7 @@
   BORDER RADIUS 100% (CIRCLE) 
 */
 @mixin classBorderRadiusCircle($prefix){
-  .#{$prefix}-circle{ 
+  .#{$prefix}-cc{ 
     border-radius: 100%; 
   }
 }
@@ -202,19 +202,19 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-    &\:absolute{
+    &\:abs{
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    &-hori{
+    &-hz{
       &\:flex{
         @extend .#{$prefix}\:flex;
         align-items: unset;  
       }
     }
-    &-vert{
+    &-ve{
       &\:flex{
         @extend .#{$prefix}\:flex;
         justify-content: unset;
@@ -225,22 +225,19 @@
 /* 
   WIDTH AND HEIGHT LIMITS
 */
-@mixin whLimiters(){
-  $props: height width;
-  @each $prop in $props{
-    .#{$prop}{
-      &\:full{
-        #{$prop}:100%;
-      }
-      &\:auto{
-        #{$prop}:auto; 
-      }
-      &\:none{
-        #{$prop}:0;
-      }
-      &\:max-100{
-        max-#{$prop}:100%;
-      }
+@mixin whLimiters($prefix, $prop){
+  .#{$prefix}{
+    &\:full{
+      #{$prop}:100%;
+    }
+    &\:auto{
+      #{$prop}:auto; 
+    }
+    &\:none{
+      #{$prop}:0;
+    }
+    &\:max{
+      max-#{$prop}:100%;
     }
   }
 }

@@ -26,3 +26,6 @@ https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-a
 
 Separation of Concerns
 https://en.wikipedia.org/wiki/Separation_of_concerns
+
+ATOMIC CSS AS A TOOL SET
+https://www.lucidchart.com/techblog/2014/01/31/atomic-css-tool-set/
