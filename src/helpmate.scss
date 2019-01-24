@@ -28,6 +28,7 @@
  BORDER
 */
 @include classBorderStyles('bst');
+@include sizefy('bw', 'border-width', 1px);
 @include sizefy('brd', 'border-radius', var(--hm-gutter));
 @include sizefy('brd-tl', 'border-top-left-radius', var(--hm-gutter));
 @include sizefy('brd-tr', 'border-top-right-radius', var(--hm-gutter));
@@ -99,6 +100,6 @@ $resizers: none, both, vertical, horizontal;
 @include whLimiters('w', 'width');
 @include whLimiters('h', 'height');
 /*
- CLASS HIDDEN
+ HIDINGS
 */
 @include classHidings('no');

@@ -549,6 +549,27 @@
   border-right-style: outset;
   border-left-style: outset;
 }
+.bw{
+  border-width: 1px;
+}
+.bw\:xs{
+  border-width: calc(1px / 4);
+}
+.bw\:sm{
+  border-width: calc(1px / 2);
+}
+.bw\:md{
+  border-width: calc(1px * 2);
+}
+.bw\:lg{
+  border-width: calc(1px * 3);
+}
+.bw\:xl{
+  border-width: calc(1px * 4);
+}
+.bw\:none{
+  border-width: 0;
+}
 .brd{
   border-radius: var(--hm-gutter);
 }
