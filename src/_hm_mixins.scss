@@ -236,7 +236,7 @@
     &\:none{
       #{$prop}:0;
     }
-    &\:max{
+    &\:max-100{
       max-#{$prop}:100%;
     }
   }
@@ -314,7 +314,7 @@ $desktop-lg: 2560px;
     &\:desktop-lg{
       @include hideAt($desktop-lg);
       &-only{
-        @media screen and(min-width: $desktop-lg){
+        @media screen and(min-width: $desktop){
           display: none !important;
         }
       }      

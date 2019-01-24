@@ -1108,7 +1108,7 @@
 .w\:none{
   width: 0;
 }
-.w\:max{
+.w\:max-100{
   max-width: 100%;
 }
 .h\:full{
@@ -1120,7 +1120,7 @@
 .h\:none{
   height: 0;
 }
-.h\:max{
+.h\:max-100{
   max-height: 100%;
 }
 .no{
@@ -1198,7 +1198,7 @@
     display: none !important;
   }
 }
-@media screen and (min-width: 2560px){
+@media screen and (min-width: 1440px){
   .no\:desktop-lg-only{
     display: none !important;
   }
