@@ -11,13 +11,17 @@ This is an "Static Atomic CSS Library" to avoid massive code repeating (by re-ad
 Writing Style Sheets on SoC - A Proposal
 Separation of concerns (SoC) applied to style sheets writing process.
 
--- SoC Layers:
+-- SoC Layers: Every Component/Block Stylesheet will have:
 
-1. Define the layout and position (prefer use grid)
-2. Add basic properties (use atomic style - helpmate )
-3. Add theme (atomize or note, do as you want)
-4. Add self properties (element exclusive props)
-5. Misc (animations, Thirty Party Needings, etc)
+1. Layout and position (prefer use grid)
+2. Global (common/native) style (use atomic style)
+3. Theme and self properties
+
+Scss/Css Folder/File Tree
+
+1. Layouts.s/css
+2. Helpmate.css
+3. Themes.s/css
 
 # Research
 
