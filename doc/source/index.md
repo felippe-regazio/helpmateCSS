@@ -1,4 +1,4 @@
 ---
 title: About
-layout: about
+layout: clean
 ---
