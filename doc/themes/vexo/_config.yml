@@ -7,9 +7,9 @@ excerpt_link: Read more
 
 menu:
  Home: /
- Tags: /tags/
- Archives: /archives/
- Projects: /project/
+ # Tags: /tags/
+ # Archives: /archives/
+ # Projects: /project/
  About: /about/
 
 # highlight
@@ -56,6 +56,6 @@ about:
 
 # MathJax Support
 mathjax:
-  enable: true
+  enable: false
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
