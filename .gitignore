@@ -1,3 +1,11 @@
 node_modules
 doc/node_modules
 .DS_Store
+
+doc/.DS_Store
+doc/Thumbs.db
+doc/db.json
+doc/*.log
+doc/node_modules/
+doc/public/
+doc/.deploy*/
