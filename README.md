@@ -23,6 +23,17 @@ Scss/Css Folder/File Tree
 2. Helpmate.css
 3. Themes.s/css
 
+# Documentation
+
+Documentation at: http://embreve.github.com
+
+
+To contribute with the documentation: this doc is builded with hexo. If you never heard about Hexo, you may want to see its documentation before start: https://hexo.io/. To edit the doc, go to your helpmateCss dir on a terminal, then go to ./doc dir and run:
+
+```bash
+npm install hexo -g && npm install
+```
+
 # Research
 
 Challenging CSS Best Practices
