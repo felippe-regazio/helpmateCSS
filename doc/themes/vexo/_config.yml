@@ -1,6 +1,6 @@
-author: yanm1ng # 作者
-description: yanm1ng's blog
-keyword: hexo-theme, vuejs
+author: Felippe Regazio # 作者
+description: HelpmateCSS Documentation
+keyword: HelpmateCSS CSS Atomic Functional Scss
 favicon: 
 
 excerpt_link: Read more
@@ -20,10 +20,10 @@ highlight:
 catalog: true
 
 # donate
-donate: true
+donate: false
 
 # qrcode
-qrcode: true
+qrcode: false
 
 # comment
 # you can set gitment, uyan or disqus
