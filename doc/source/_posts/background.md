@@ -8,7 +8,7 @@ tags:
 
 {% raw %}
 <div class="content">
-	<div class="block cen:flex">
+	<div class="block">
 	  <!--  -->
 	  <div class="square mar big" style="background-image: url('../candy.jpg')">
 	    <span class="hey mar:sm">bg with no class</span>
@@ -33,7 +33,7 @@ tags:
 
 {% raw %}
 <div class="content">
-	<div class="block cen:flex">
+	<div class="block">
 	    <div class="square mar big bg:center" style="background-image: url('../candy.jpg')">
 	      <span class="hey mar:sm">bg:center</span>
 	    </div>       
