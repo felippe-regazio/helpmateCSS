@@ -114,3 +114,7 @@ This base value is a css custom property, the --hm-gutter. You can override this
 
 Fork this project on Github:
 https://github.com/felippe-regazio/helpmateCSS
+
+# Credits and License
+
+HelpmateCSS by Felippe Regazio, under MIT license.

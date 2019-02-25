@@ -146,3 +146,7 @@ npm install && gulp
 
 The files inside the /dist folder will be created. The css will be auto-prefixed, and will have a minified ang gziped version.
 Change the sources as you want, and if you have a nice sugestion, please leave a comment.
+
+# Credits and License
+
+HelpmateCSS by Felippe Regazio, under MIT license.
