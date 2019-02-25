@@ -1,46 +1,42 @@
 # HelpmateCSS
 
-This is in development, please dont use yet.
-
-# Note
-
 This is an "Static Atomic CSS Library" to avoid massive code repeating (by re-adding the same properties always, for example). This is a collection of CSS common properties turned into Utility Classes.
 
-# Flux
+This library dont have a grid system. Helpmate provides a collection of helpers to apply current and simply styles avoiding repeat same code every single class to do simple things as deal with display responsive rules, for example. You can use this library to turn your html components more descriptive when working in a team.
 
-Writing Style Sheets on SoC - A Proposal
-Separation of concerns (SoC) applied to style sheets writing process.
+# Getting Started
 
--- SoC Layers: Every Component/Block Stylesheet will have:
+Add the library to your head and apply the classes in according to your needings
 
-1. Layout and position (prefer use grid)
-2. Global (common/native) style (use atomic style)
-3. Theme and self properties
-
-Scss/Css Folder/File Tree
-
-1. Layouts.s/css
-2. Helpmate.css
-3. Themes.s/css
+```html
+<link rel="stylesheet" type="text/css" href="whatever/dist/helpmate.min.css">
+```
 
 # Documentation
 
-Documentation at: http://embreve.github.com
+Docs At:
+http://helpmatecssdoc/asdf
 
-
-To contribute with the documentation: this doc is builded with hexo. If you never heard about Hexo, you may want to see its documentation before start: https://hexo.io/. To edit the doc, go to your helpmateCss dir on a terminal, then go to ./doc dir and run:
+To see documentation from the sources, just open the index.html inside the /doc folder.
+To compile the documentation, go to the helpmateCSS root in a terminal, and run:
 
 ```bash
-npm install hexo -g && npm install
+npm install hexo -g && cd doc && hexo generate && hexo server
 ```
 
-# Research
+Here we install hexo as global, then cd to the /doc folder, use hexo to generate doc files and serve them.
+To know more about Hexo, please follow https://hexo.io/
 
-Challenging CSS Best Practices
-https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/
+# Flux
 
-Separation of Concerns
-https://en.wikipedia.org/wiki/Separation_of_concerns
+HelpmateCSS is constructed using scss. The sourcers are on the src file. You can use gulp to compile them if you need.
+This is specially useful if you want to extend or change something (as add a prefix, or change base sizes, for example).
+To recompile, open a terminal on the HelpmateCSS root folder, and follow this steps:
 
-ATOMIC CSS AS A TOOL SET
-https://www.lucidchart.com/techblog/2014/01/31/atomic-css-tool-set/
+
+```bash
+npm install && gulp
+```
+
+The files inside the /dist folder will be created. The css will be auto-prefixed, and will have a minified ang gziped version.
+Change the sources as you want, and if you have a nice sugestion, please leave a comment.
