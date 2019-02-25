@@ -14,23 +14,66 @@ Add the library to your head and apply the classes in according to your needings
 
 # Documentation
 
-Docs At:
+Online Documentation At:
 http://helpmatecssdoc/asdf
 
-To see documentation from the sources, just open the index.html inside the /doc folder.
-To compile the documentation, go to the helpmateCSS root in a terminal, and run:
+# Coverage
+
+The library cover the following properties/aspects:
+
+- background
+- centering
+- cursor
+- hiding
+- list
+- margin
+- overflow
+- padding
+- resize
+- text
+- visibility
+- width-height (full/none)
+
+The library follow a simple pattern:
+
+# Properties and Values
+
+prefix:value
+
+So, you must add the prefix of the propertie you want to change (bg for background, for example), followed
+by the :value that you want to apply - bg:cover or bg:auto to change background behavior for example.
+
+# Sizes
+
+The
+
+
+# Docs from Scratch
+
+To see documentation from the sources or recompile it, you must install Hexo first.
 
 ```bash
-npm install hexo -g && cd doc && hexo generate && hexo server
+npm install hexo -g
 ```
 
-Here we install hexo as global, then cd to the /doc folder, use hexo to generate doc files and serve them.
+To serve the docs, go to helpmateCSS/doc/ and run
+
+```bash
+hexo serve
+```
+
+To recompile the docs, go to the helpmateCSS/doc/ and run:
+
+```bash
+hexo generate && hexo serve
+```
+
 To know more about Hexo, please follow https://hexo.io/
 
-# Flux
+# The Flux
 
-HelpmateCSS is constructed using scss. The sourcers are on the src file. You can use gulp to compile them if you need.
-This is specially useful if you want to extend or change something (as add a prefix, or change base sizes, for example).
+HelpmateCSS is constructed using scss. The sources are on the /src folder. You must use Gulp to compile/minify them.
+This is specially useful if you want to extend or change something (as add a prefix, or change unit sizes, for example).
 To recompile, open a terminal on the HelpmateCSS root folder, and follow this steps:
 
 
