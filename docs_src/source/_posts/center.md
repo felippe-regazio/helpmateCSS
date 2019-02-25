@@ -4,10 +4,6 @@ date: 2019-01-29 21:28:31
 tags:
 ---
 
-<div class="header">
-  <h1>Center</h1>
-</div>
-<br/>
 <div class="content">
   <h4>Center Flex</h4>
   <p class="ta:right hey">cen:flex</p>
