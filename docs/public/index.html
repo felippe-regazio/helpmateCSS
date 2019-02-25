@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="This is an &#34;Static Atomic CSS Library&#34; to avoid massive code repeating (by re-adding the same properties always, for example). This is a collection of CSS common properties turned into Utility Classes.">
+  <meta name="keyword" content="HelpmateCSS CSS Atomic Functional Scss">
+  
+    <link rel="shortcut icon" type="image/ico" href="/atom.png"> 
+  
+  <title>
+    
+      About | HelpmateCSS Documentation
+    
+  </title>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+<link rel="stylesheet" href="/css/plugins/nprogress.min.css">
+<link rel="stylesheet" href="/css/plugins/tomorrow.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+<link rel="stylesheet" href="/css/plugins/helpmate.css">
+  <!-- js -->
+  <script src="/js/nprogress.min.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+  
+
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <img src="/atom.svg" style="max-width:30px; margin-right: 20px">
+      <span>HelpmateCSS Documentation</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="https://github.com/felippe-regazio/helpmateCSS" class="item-link">Github</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="https://github.com/felippe-regazio/helpmateCSS" class="menu-link">Github</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner"></div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h1 id="The-HelpmateCSS-Utility"><a href="#The-HelpmateCSS-Utility" class="headerlink" title="The HelpmateCSS Utility"></a>The HelpmateCSS Utility</h1><p>This is an “Static Atomic CSS Library” to avoid massive code repeating (by re-adding the same properties always, for example). This is a collection of CSS common properties turned into Utility Classes.</p>
+<p>This library dont have a grid system. Helpmate provides a collection of helpers to apply current and simply styles avoiding repeat same code every single class to do simple things as deal with display responsive rules, for example. You can use this library to turn your html components more descriptive when working in a team.</p>
+<h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started:"></a>Getting Started:</h1><p>Add the library to your head and apply the classes in according to your needings.<br>Se the which classes to apply and how to use them on the index below.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"whatever/dist/helpmate.min.css"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Content-Index"><a href="#Content-Index" class="headerlink" title="Content Index"></a>Content Index</h1><ul>
+<li><a href="/background/" title="background">background</a></li>
+<li><a href="/center/" title="center">center</a></li>
+<li><a href="/cursor/" title="cursor">cursor</a></li>
+<li><a href="/hiding/" title="hiding">hiding</a></li>
+<li><a href="/list/" title="list">list</a></li>
+<li><a href="/margin/" title="margin">margin</a></li>
+<li><a href="/overflow/" title="overflow">overflow</a></li>
+<li><a href="/padding/" title="padding">padding</a></li>
+<li><a href="/resize/" title="resize">resize</a></li>
+<li><a href="/text/" title="text">text</a></li>
+<li><a href="/visibility/" title="visibility">visibility</a></li>
+<li><a href="/width-height/" title="width-height">width-height</a>
+</li>
+</ul>
+<h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>Commonly the prefixes are constructed from common abreviations. If the property has two words, so the<br>helpmate prefix will be the first letter of each word (fw for font-weight for ex). So, the library follows<br>a simple pattern. You must check the documentation to see the complete list of features. Here we’ll show<br>a simple overview of the usage:</p>
+<h4 id="Properties-and-Values"><a href="#Properties-and-Values" class="headerlink" title="Properties and Values"></a>Properties and Values</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- prefix:value --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bg:none ovf:scroll"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>So, you must add the prefix of the propertie you want to change (bg for background, for example), followed<br>by the :value that you want to apply - bg:cover or bg:auto to change background behavior for example.</p>
+<h4 id="Sizes"><a href="#Sizes" class="headerlink" title="Sizes"></a>Sizes</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- prefix:size --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pad:xs"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The properties that depends from sizes will accept the following values: xs, md, lg, xl. Those values corresponds to: extra small, medium, large and extra large.</p>
+<h4 id="Direction"><a href="#Direction" class="headerlink" title="Direction"></a>Direction</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- prefix-direction:value --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pad-l:xs"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The direction can be left, right, top or bottom, and are represented by their first letter. l: left; r: right; t: top; b: bottom/ You can use VE and HZ to apply vertical and horizontal styles. For example:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Apply a vertical (left, right) extra large padding --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pad-ve:xl"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- Apply a horizontal (top, bottom) larg padding --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pad-hz:lg"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="The-Base-Value"><a href="#The-Base-Value" class="headerlink" title="The Base Value"></a>The Base Value</h1><p>The base value on HelpmateCSS is 14px. That means all the values that represents sizes will be calculated based on this value.<br>This give us the following sizes:</p>
+<ul>
+<li>xl -&gt; 14px * 4</li>
+<li>lg -&gt; 14px * 3</li>
+<li>md -&gt; 14px * 2</li>
+<li>14px (base value)</li>
+<li>sm -&gt; 14px / 2</li>
+<li>xs -&gt; 14px / 4</li>
+</ul>
+<p>This base value is a css custom property, the –hm-gutter. You can override this value at you code anyway and anywhere you want using css custom properties. To change the base value, you can just reassign the –hm-gutter. For example:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  // resign the gutter for whole page</span><br><span class="line">  <span class="selector-tag">--hm-gutter</span>: 20<span class="selector-tag">px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.custom</span> &#123;</span><br><span class="line">  // resign the gutter for this class</span><br><span class="line">  <span class="selector-tag">--hm-gutter</span>: 8<span class="selector-tag">px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1><p>Fork this project on Github:<br><a href="https://github.com/felippe-regazio/helpmateCSS" target="_blank" rel="noopener">https://github.com/felippe-regazio/helpmateCSS</a></p>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+    <!-- NAV END -->
+  </article>
+  <!-- Article END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'http://test.com/index.html';
+    var banner = ''
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+        
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright"> HelpmateCSS Documentation 
+    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Original Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+    HelpmateCss by <a href="https://github.com/felippe-regazio">felippe-regazio</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  var hasLine = 'true';
+  async('//'+window.location.host+"/js/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<script src="/js/script.js"></script>
+  </body>
+</html>
