@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="This is an &#34;Static Atomic CSS Library&#34; to avoid massive code repeating (by re-adding the same properties always, for example). This is a collection of CSS common properties turned into Utility Classes.">
+  <meta name="keyword" content="HelpmateCSS CSS Atomic Functional Scss">
+  
+    <link rel="shortcut icon" type="image/ico" href="/atom.png"> 
+  
+  <title>
+    
+      hiding | HelpmateCSS Documentation
+    
+  </title>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/plugins/font-awesome.min.css">
+<link rel="stylesheet" href="/css/plugins/nprogress.min.css">
+<link rel="stylesheet" href="/css/plugins/tomorrow.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+<link rel="stylesheet" href="/css/plugins/helpmate.css">
+  <!-- js -->
+  <script src="/js/nprogress.min.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+  
+
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <img src="/atom.svg" style="max-width:30px; margin-right: 20px">
+      <span>HelpmateCSS Documentation</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="https://github.com/felippe-regazio/helpmateCSS" class="item-link">Github</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="https://github.com/felippe-regazio/helpmateCSS" class="menu-link">Github</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner"></div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h3 id="Hidings"><a href="#Hidings" class="headerlink" title="Hidings"></a>Hidings</h3>
+<div class="content">
+  <div class="block">
+    <div class="cen-ve:flex">
+      <div class="square big mar cen:flex"><div>reference</div></div>
+      <div class="square big mar cen:flex"><div class="no">hidden</div></div>
+    </div>    
+  </div>
+  <div class="text">
+    <h4 id="hidden-by-breakpoint">Hidden by Breakpoint</h4>
+    <p>You can hide an element by breakpoints using <span class="hey">no:</span><span class="fw:bold">breakpoint</span></p>
+    <h4 id="breakpoints">Breakpoints:</h4>
+    <ul>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile-sm</span> 320px</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile-md</span> 375px</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile</span> 425</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">tablet</span> 768px</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">laptop</span> 1024px</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">desktop</span> 1440px</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">desktop-lg</span> 2560px</li><br>
+    </ul>      
+  </div>
+  <div class="block">
+    <h4 id="mobile-sm">no:mobile-sm</h4>
+    <p>Hides element to all screens minor than 320px</p>
+    <div class="square big cen:flex no:mobile-sm"><div class="hey">no:mobile-sm</div></div>
+  </div>
+  <div class="block">
+    <h4 id="mobile-md">no:mobile-md</h4>
+    <p>Hides element to all screens minor than 375px</p>
+    <div class="square big cen:flex no:mobile-md"><div class="hey">no:mobile-md</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-mobile">no:mobile</h4>
+    <p>Hides element to all screens minor than 425px</p>
+    <div class="square big cen:flex no:mobile"><div class="hey">no:mobile</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-tablet">no:tablet</h4>
+    <p>Hides element to all screens minor than 768px</p>
+    <div class="square big cen:flex no:tablet"><div class="hey">no:tablet</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-laptop">no:laptop</h4>
+    <p>Hides element to all screens minor than 1024px</p>
+    <div class="square big cen:flex no:laptop"><div class="hey">no:laptop</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-desktop">no:desktop</h4>
+    <p>Hides element to all screens minor than 1440px</p>
+    <div class="square big cen:flex no:desktop"><div class="hey">no:desktop</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-desktop-lg">no:desktop-lg</h4>
+    <p>Hides element to all screens minor than 2560px</p>
+    <div class="square big cen:flex no:desktop-lg"><div class="hey">no:desktop-lg</div></div>
+  </div>
+  <div class="text">
+    <h4 id="device-only">Hidden for a Device Only</h4>
+    <p>You can hide an element only to an specific device width. The element will be hidden from its breakpoint till the next minor breakpoint.</p>
+    <h4 id="device-only-breakpoints">Breakpoints (Only Mode):</h4>
+    <ul>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile-sm</span> Between <span class="fw:bold">N</span> and max <span class="fw:bold">320px</span></li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile-md</span> min <span class="fw:bold">320px | 375px </span>max</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">mobile</span> min <span class="fw:bold">375px | 425px </span>max</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">tablet</span> min <span class="fw:bold">425px | 768px </span>max</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">laptop</span> min <span class="fw:bold">768px | 1024px </span>max</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">desktop</span> min <span class="fw:bold">1024px | 1440px </span>max</li><br>
+      <li><span class="fw:bold" style="width: 100px; display: inline-block">desktop-lg</span> Between min <span class="fw:bold">1440px</span> and <span class="fw:bold"> N</span></li><br>
+    </ul>      
+  </div>
+  <div class="block">
+    <h4 id="no-mobile-sm-only">no:mobile-sm-only</h4>
+    <div class="square big cen:flex no:mobile-sm-only"><div class="hey">no:mobile-sm-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-mobile-md-only">no:mobile-md-only</h4>
+    <div class="square big cen:flex no:mobile-md-only"><div class="hey">no:mobile-md-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="mo-mobile-only">no:mobile-only</h4>
+    <div class="square big cen:flex no:mobile-only"><div class="hey">no:mobile-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-tablet-only">no:tablet-only</h4>
+    <div class="square big cen:flex no:tablet-only"><div class="hey">no:tablet-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-laptop-only">no:laptop-only</h4>
+    <div class="square big cen:flex no:laptop-only"><div class="hey">no:laptop-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-desktop-only">no:desktop-only</h4>
+    <div class="square big cen:flex no:desktop-only"><div class="hey">no:desktop-only</div></div>
+  </div>
+  <div class="block">
+    <h4 id="no-desktop-lg-only">no:desktop-lg-only</h4>
+    <div class="square big cen:flex no:desktop-lg-only"><div class="hey">no:desktop-lg-only</div></div>
+  </div>    
+</div>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/cursor/">
+        <span class="nav-arrow">← </span>
+        
+          cursor
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/list/">
+        
+          list
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Hidings"><span class="toc-nav-text">Hidings</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#hidden-by-breakpoint"><span class="toc-nav-text">Hidden by Breakpoint</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#breakpoints"><span class="toc-nav-text">Breakpoints:</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#mobile-sm"><span class="toc-nav-text">no:mobile-sm</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#mobile-md"><span class="toc-nav-text">no:mobile-md</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-mobile"><span class="toc-nav-text">no:mobile</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-tablet"><span class="toc-nav-text">no:tablet</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-laptop"><span class="toc-nav-text">no:laptop</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-desktop"><span class="toc-nav-text">no:desktop</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-desktop-lg"><span class="toc-nav-text">no:desktop-lg</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#device-only"><span class="toc-nav-text">Hidden for a Device Only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#device-only-breakpoints"><span class="toc-nav-text">Breakpoints (Only Mode):</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-mobile-sm-only"><span class="toc-nav-text">no:mobile-sm-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-mobile-md-only"><span class="toc-nav-text">no:mobile-md-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#mo-mobile-only"><span class="toc-nav-text">no:mobile-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-tablet-only"><span class="toc-nav-text">no:tablet-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-laptop-only"><span class="toc-nav-text">no:laptop-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-desktop-only"><span class="toc-nav-text">no:desktop-only</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#no-desktop-lg-only"><span class="toc-nav-text">no:desktop-lg-only</span></a></li></ol></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'http://test.com/hiding/';
+    var banner = ''
+    // $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+        
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "yanm1ng";
+    if (gitmentConfig !== 'undefined') {
+      var gitment = new Gitment({
+        id: "hiding",
+        owner: "yanm1ng",
+        repo: "yanm1ng.github.io",
+        oauth: {
+          client_id: "0f87e490e00ee3fd87ef",
+          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright"> HelpmateCSS Documentation 
+    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Original Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+    HelpmateCss by <a href="https://github.com/felippe-regazio">felippe-regazio</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  var hasLine = 'true';
+  async('//'+window.location.host+"/js/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<script src="/js/script.js"></script>
+  </body>
+</html>

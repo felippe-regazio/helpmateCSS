@@ -113,19 +113,19 @@ This base value is a css custom property, the --hm-gutter. You can override this
 
 # Docs from Scratch
 
-To see documentation from the sources or recompile it, you must install Hexo first.
+If you only want to see the docs, you can read online on the address at the #documentation section, or you can open the docs on you localhost going to helpmateCSS/docs folder. To see documentation from the sources or recompile it, you must install Hexo first.
 
 ```bash
 npm install hexo -g
 ```
 
-To serve the docs, go to helpmateCSS/docs/ and run
+To serve the docs, go to helpmateCSS/docs_src/ and run
 
 ```bash
 hexo serve
 ```
 
-To recompile the docs, go to the helpmateCSS/docs/ and run:
+To recompile the docs, go to the helpmateCSS/docs_src/ and run:
 
 ```bash
 hexo generate && hexo serve
