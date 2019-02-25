@@ -41,14 +41,14 @@ helpmate prefix will be the first letter of each word (fw for font-weight for ex
 a simple pattern. You must check the documentation to see the complete list of features. Here we'll show
 a simple overview of the usage:
 
---- Properties and Values
+#### Properties and Values
 
 prefix:value
 
 So, you must add the prefix of the propertie you want to change (bg for background, for example), followed
 by the :value that you want to apply - bg:cover or bg:auto to change background behavior for example.
 
---- Sizes
+#### Sizes
 
 prefix:size
 
@@ -62,7 +62,7 @@ pad:xs // apply an extra small padding
 pad    // apply a default pad
 pad:lg // apply a large padding
 
---- Direction
+#### Direction
 
 prefix-direction:value
 
