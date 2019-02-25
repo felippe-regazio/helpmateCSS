@@ -66,10 +66,15 @@ by the :value that you want to apply - bg:cover or bg:auto to change background 
 prefix:size
 
 The properties that depends from sizes will accept the following values:
+
 xs
+
 md
+
 lg
+
 xl
+
 corresponding to extra small, medium, large and extra large.
 
 If you want to add the default size, just add the prefix without value.
@@ -92,8 +97,11 @@ prefix-direction:value
 The direction can be left, right, top or bottom, and are represented by their first letter.
 
 l: left
+
 r: right
+
 t: top
+
 b: bottom
 
 To apply the padding, for example:
