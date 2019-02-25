@@ -43,6 +43,12 @@ a simple overview of the usage:
 
 #### Properties and Values
 
+```html
+<div class="bg:none ovf:scroll">
+	<p>hello</p>
+</div>
+```
+
 prefix:value
 
 So, you must add the prefix of the propertie you want to change (bg for background, for example), followed
@@ -50,10 +56,21 @@ by the :value that you want to apply - bg:cover or bg:auto to change background 
 
 #### Sizes
 
+
+```html
+<div class="pad:xs">
+	<p>hello</p>
+</div>
+```
+
 prefix:size
 
 The properties that depends from sizes will accept the following values:
-"xs, md, lg, xl", corresponding to extra small, medium, large and extra large.
+xs
+md
+lg
+xl
+corresponding to extra small, medium, large and extra large.
 
 If you want to add the default size, just add the prefix without value.
 To apply different paddings, for example:
@@ -63,6 +80,12 @@ pad    // apply a default pad
 pad:lg // apply a large padding
 
 #### Direction
+
+```html
+<div class="pad-l:xs">
+	<p>hello</p>
+</div>
+```
 
 prefix-direction:value
 
@@ -78,6 +101,12 @@ To apply the padding, for example:
 pad-l:xs   // apply an extra small padding on left
 pad-r:lg   // and a large padding on right,
 pad-b:none // to remove padding on bottom
+
+```html
+<div class="pad-ve:xl">
+	<p>hello</p>
+</div>
+```
 
 You can use VE and HZ to apply vertical and horizontal styles. For example:
 
