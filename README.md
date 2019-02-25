@@ -44,12 +44,11 @@ a simple overview of the usage:
 #### Properties and Values
 
 ```html
+<!-- prefix:value -->
 <div class="bg:none ovf:scroll">
-	<p>hello</p>
+  <p>hello</p>
 </div>
 ```
-
-prefix:value
 
 So, you must add the prefix of the propertie you want to change (bg for background, for example), followed
 by the :value that you want to apply - bg:cover or bg:auto to change background behavior for example.
@@ -58,12 +57,11 @@ by the :value that you want to apply - bg:cover or bg:auto to change background 
 
 
 ```html
+<!-- prefix:size -->
 <div class="pad:xs">
-	<p>hello</p>
+  <p>hello</p>
 </div>
 ```
-
-prefix:size
 
 The properties that depends from sizes will accept the following values:
 
@@ -81,18 +79,19 @@ If you want to add the default size, just add the prefix without value.
 To apply different paddings, for example:
 
 pad:xs // apply an extra small padding
+
 pad    // apply a default pad
+
 pad:lg // apply a large padding
 
 #### Direction
 
 ```html
+<!-- prefix-direction:value -->
 <div class="pad-l:xs">
-	<p>hello</p>
+  <p>hello</p>
 </div>
 ```
-
-prefix-direction:value
 
 The direction can be left, right, top or bottom, and are represented by their first letter.
 
@@ -107,25 +106,29 @@ b: bottom
 To apply the padding, for example:
 
 pad-l:xs   // apply an extra small padding on left
+
 pad-r:lg   // and a large padding on right,
+
 pad-b:none // to remove padding on bottom
 
 ```html
 <div class="pad-ve:xl">
-	<p>hello</p>
+  <p>hello</p>
 </div>
 ```
 
 You can use VE and HZ to apply vertical and horizontal styles. For example:
 
 pad-ve:xs // apply an extra small padding on top and bottom
+
 pad-hz:lg // apply a large padding on left and right
 
-#### Code Example
+#### Simple Code Example
 
 ```html
+<!-- A simple div with padding and a text align right, capitalized and bold -->
 <div class="pad">
-	<p class="ta:right tt:capitalize tw:700">This is a HelpmateCSS Example</p>
+  <p class="ta:right tt:capitalize tw:700">This is a HelpmateCSS Example</p>
 </div>
 ```
 
