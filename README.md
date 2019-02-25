@@ -98,7 +98,7 @@ This give us the following sizes:
 - sm -> 14px / 2
 - xs -> 14px / 4
 
-This base value is a css property, the --hm-gutter. You can override this value at you code anyway and anywhere you want using css custom properties. To change the base value, you can just reassign the --hm-gutter. For example:
+This base value is a css custom property, the --hm-gutter. You can override this value at you code anyway and anywhere you want using css custom properties. To change the base value, you can just reassign the --hm-gutter. For example:
 
 ```css
 :root {
