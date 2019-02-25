@@ -6,7 +6,7 @@ This library dont have a grid system. Helpmate provides a collection of helpers 
 
 # Getting Started
 
-Add the library to your head and apply the classes in according to your needings
+Add the library to your head and apply the classes in according to your needings.
 
 ```html
 <link rel="stylesheet" type="text/css" href="whatever/dist/helpmate.min.css">
@@ -55,7 +55,6 @@ by the :value that you want to apply - bg:cover or bg:auto to change background 
 
 #### Sizes
 
-
 ```html
 <!-- prefix:size -->
 <div class="pad:xs">
@@ -63,26 +62,7 @@ by the :value that you want to apply - bg:cover or bg:auto to change background 
 </div>
 ```
 
-The properties that depends from sizes will accept the following values:
-
-xs
-
-md
-
-lg
-
-xl
-
-corresponding to extra small, medium, large and extra large.
-
-If you want to add the default size, just add the prefix without value.
-To apply different paddings, for example:
-
-pad:xs // apply an extra small padding
-
-pad    // apply a default pad
-
-pad:lg // apply a large padding
+The properties that depends from sizes will accept the following values: xs, md, lg, xl. Those values corresponds to: extra small, medium, large and extra large.
 
 #### Direction
 
@@ -93,43 +73,42 @@ pad:lg // apply a large padding
 </div>
 ```
 
-The direction can be left, right, top or bottom, and are represented by their first letter.
-
-l: left
-
-r: right
-
-t: top
-
-b: bottom
-
-To apply the padding, for example:
-
-pad-l:xs   // apply an extra small padding on left
-
-pad-r:lg   // and a large padding on right,
-
-pad-b:none // to remove padding on bottom
+The direction can be left, right, top or bottom, and are represented by their first letter. l: left; r: right; t: top; b: bottom/ You can use VE and HZ to apply vertical and horizontal styles. For example:
 
 ```html
+<!-- Apply a vertical (left, right) extra large padding -->
 <div class="pad-ve:xl">
+  <p>hello</p>
+</div>
+<!-- Apply a horizontal (top, bottom) larg padding -->
+<div class="pad-hz:lg">
   <p>hello</p>
 </div>
 ```
 
-You can use VE and HZ to apply vertical and horizontal styles. For example:
+# The Base Value
 
-pad-ve:xs // apply an extra small padding on top and bottom
+The base value on HelpmateCSS is 14px. That means all the values that represents sizes will be calculated based on this value.
+This give us the following sizes:
 
-pad-hz:lg // apply a large padding on left and right
+- xl -> 14px * 4
+- lg -> 14px * 3
+- md -> 14px * 2
+- 14px (base value)
+- sm -> 14px / 2
+- xs -> 14px / 4
 
-#### Simple Code Example
+This base value is a css property, the --hm-gutter. You can override this value at you code anyway and anywhere you want using css custom properties. To change the base value, you can just reassign the --hm-gutter. For example:
 
-```html
-<!-- A simple div with padding and a text align right, capitalized and bold -->
-<div class="pad">
-  <p class="ta:right tt:capitalize tw:700">This is a HelpmateCSS Example</p>
-</div>
+```css
+:root {
+  // resign the gutter for whole page
+  --hm-gutter: 20px;
+}
+.custom {
+  // resign the gutter for this class
+  --hm-gutter: 8px;
+}
 ```
 
 # Docs from Scratch
