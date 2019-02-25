@@ -131,7 +131,7 @@ To recompile the docs, go to the helpmateCSS/docs_src/ and run:
 hexo generate && hexo serve
 ```
 
-To know more about Hexo, please follow https://hexo.io/
+Deploying docs to github pages: To reconstruct docs, copy the docs_src/public to /docs. Now replace the src="/ to src="/helpmateCSS/ and Replace href="/ to href="/helpmateCSS/. Perform a git push, and its done. To know more about Hexo, please follow https://hexo.io/
 
 # The Flux
 
