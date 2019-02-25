@@ -15,7 +15,7 @@ Add the library to your head and apply the classes in according to your needings
 # Documentation
 
 Online Documentation At:
-http://helpmatecssdoc/asdf
+https://felippe-regazio.github.io/helpmateCSS/
 
 # Coverage
 
