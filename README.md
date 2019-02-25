@@ -4,6 +4,8 @@ This is an "Static Atomic CSS Library" to avoid massive code repeating (by re-ad
 
 This library dont have a grid system. Helpmate provides a collection of helpers to apply current and simply styles avoiding repeat same code every single class to do simple things as deal with display responsive rules, for example. You can use this library to turn your html components more descriptive when working in a team.
 
+If you intent to simply add the LIB on your project, the files which you need are on the "./dist" folder.
+
 # Getting Started
 
 Add the library to your head and apply the classes in according to your needings.
