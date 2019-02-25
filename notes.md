@@ -1,3 +1,0 @@
-There is no such thing as a "Grid" in Atomic CSS. Atomic CSS does not provide classes to create columns based on an opinionated construct (float, inline-block, etc.)
-
-Even if you consider yourself a CSS expert, chances are that at some point on a large project you've had to deal with a convoluted, labyrinthine stylesheet that never stops growing. Some stylesheets can feel like a messy entangled web of inheritance.
