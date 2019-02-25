@@ -84,7 +84,7 @@ You can use VE and HZ to apply vertical and horizontal styles. For example:
 pad-ve:xs // apply an extra small padding on top and bottom
 pad-hz:lg // apply a large padding on left and right
 
-### Code Example
+#### Code Example
 
 ```html
 <div class="pad">
