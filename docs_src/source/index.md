@@ -18,6 +18,9 @@ Se the which classes to apply and how to use them on the index below.
 <link rel="stylesheet" type="text/css" href="whatever/dist/helpmate.min.css">
 ```
 
+You can get the files here:
+https://github.com/felippe-regazio/helpmateCSS/tree/master/dist
+
 # Content Index
 
 - {% post_link background %}
