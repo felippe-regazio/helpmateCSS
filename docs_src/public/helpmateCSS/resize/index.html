@@ -10,7 +10,7 @@
   
   <title>
     
-      overflow | HelpmateCSS Documentation
+      resize | HelpmateCSS Documentation
     
   </title>
   <!-- css -->
@@ -83,25 +83,23 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h3 id="Overflow"><a href="#Overflow" class="headerlink" title="Overflow"></a>Overflow</h3>
+    <section class="markdown-content"><h3 id="Resize"><a href="#Resize" class="headerlink" title="Resize"></a>Resize</h3>
 <div class="content">
-  <br><br>
+  <div class="text">
+    <p>Resize will turn your element resizable. (Take a look at the right bottom of the element).<br>Use <span class="hey">resize</span> with <span class="hey">ovf:auto</span> to avoid content crop (if you want to).</p>
+  </div>
   <div class="block">
-    <div class="square mar pad:sm ovf:hidden">
-      <p class="hey mar:none">ovf:hidden</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
+    <div class="square mar hey pad:sm ovf:auto rs:none">
+      <div>rs:none</div>
     </div>
-    <div class="square mar pad:sm ovf:auto">
-      <p class="hey mar:none">ovf:auto</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
+    <div class="square mar hey pad:sm ovf:auto rs:both">
+      <div>rs:both</div>
     </div>
-    <div class="square mar pad:sm ovf:scroll">
-      <p class="hey mar:none">ovf:scroll</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
+    <div class="square mar hey pad:sm ovf:auto rs:horizontal">
+      <div>rs:horizontal</div>
     </div>
-    <div class="square mar pad:sm ovf:visible">
-      <p class="hey mar:none">ovf:visible</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
+    <div class="square mar hey pad:sm ovf:auto rs:vertical">
+      <div>rs:vertical</div>
     </div>      
   </div>
 </div>
@@ -114,17 +112,17 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/list/">
+      <a class="nav-left" href="/helpmateCSS/padding/">
         <span class="nav-arrow">← </span>
         
-          list
+          padding
         
       </a>
     
     
-      <a class="nav-right" href="/padding/">
+      <a class="nav-right" href="/helpmateCSS/margin/">
         
-          padding
+          margin
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -140,7 +138,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Overflow"><span class="toc-nav-text">Overflow</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Resize"><span class="toc-nav-text">Resize</span></a></li></ol>
     
   </div>
 </aside>
@@ -150,7 +148,7 @@
 
 <script>
   (function () {
-    var url = 'https://felippe-regazio.github.io/overflow/';
+    var url = 'https://felippe-regazio.github.io/helpmateCSS/resize/';
     var banner = ''
     // $('.header').removeClass('fixed-header')
 
@@ -199,7 +197,7 @@
     var gitmentConfig = "yanm1ng";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "overflow",
+        id: "resize",
         owner: "yanm1ng",
         repo: "yanm1ng.github.io",
         oauth: {

@@ -10,7 +10,7 @@
   
   <title>
     
-      resize | HelpmateCSS Documentation
+      cursor | HelpmateCSS Documentation
     
   </title>
   <!-- css -->
@@ -83,24 +83,114 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h3 id="Resize"><a href="#Resize" class="headerlink" title="Resize"></a>Resize</h3>
+    <section class="markdown-content"><h3 id="Pointer-Events"><a href="#Pointer-Events" class="headerlink" title="Pointer Events"></a>Pointer Events</h3>
 <div class="content">
-  <div class="text">
-    <p>Resize will turn your element resizable. (Take a look at the right bottom of the element).<br>Use <span class="hey">resize</span> with <span class="hey">ovf:auto</span> to avoid content crop (if you want to).</p>
-  </div>
   <div class="block">
-    <div class="square mar hey pad:sm ovf:auto rs:none">
-      <div>rs:none</div>
+    <style>button{height: 50px;padding:8px;margin-right:8px;}</style>
+    <button class="pev:auto hey cur:pointer">pointer-events:auto</button>
+    <button class="pev:none hey cur:pointer">pointer-events:none</button>
+  </div>
+</div>
+
+<h3 id="Cursors"><a href="#Cursors" class="headerlink" title="Cursors"></a>Cursors</h3>
+<div class="content">
+  <div class="block">
+    <div class="square mar cur:context-menu">
+      <div class="hey">cur:context-menu</div>
     </div>
-    <div class="square mar hey pad:sm ovf:auto rs:both">
-      <div>rs:both</div>
+    <div class="square mar cur:help">
+      <div class="hey">cur:help</div>
     </div>
-    <div class="square mar hey pad:sm ovf:auto rs:horizontal">
-      <div>rs:horizontal</div>
+    <div class="square mar cur:pointer">
+      <div class="hey">cur:pointer</div>
     </div>
-    <div class="square mar hey pad:sm ovf:auto rs:vertical">
-      <div>rs:vertical</div>
-    </div>      
+    <div class="square mar cur:progress">
+      <div class="hey">cur:progress</div>
+    </div>
+    <div class="square mar cur:wait">
+      <div class="hey">cur:wait</div>
+    </div>
+    <div class="square mar cur:cell">
+      <div class="hey">cur:cell</div>
+    </div>
+    <div class="square mar cur:crosshair">
+      <div class="hey">cur:crosshair</div>
+    </div>
+    <div class="square mar cur:text">
+      <div class="hey">cur:text</div>
+    </div>
+    <div class="square mar cur:vertical-text">
+      <div class="hey">cur:vertical-text</div>
+    </div>
+    <div class="square mar cur:alias">
+      <div class="hey">cur:alias</div>
+    </div>
+    <div class="square mar cur:copy">
+      <div class="hey">cur:copy</div>
+    </div>
+    <div class="square mar cur:move">
+      <div class="hey">cur:move</div>
+    </div>
+    <div class="square mar cur:no-drop">
+      <div class="hey">cur:no-drop</div>
+    </div>
+    <div class="square mar cur:not-allowed">
+      <div class="hey">cur:not-allowed</div>
+    </div>
+    <div class="square mar cur:all-scroll">
+      <div class="hey">cur:all-scroll</div>
+    </div>
+    <div class="square mar cur:col-resize">
+      <div class="hey">cur:col-resize</div>
+    </div>
+    <div class="square mar cur:row-resize">
+      <div class="hey">cur:row-resize</div>
+    </div>
+    <div class="square mar cur:n-resize">
+      <div class="hey">cur:n-resize</div>
+    </div>
+    <div class="square mar cur:e-resize">
+      <div class="hey">cur:e-resize</div>
+    </div>
+    <div class="square mar cur:s-resize">
+      <div class="hey">cur:s-resize</div>
+    </div>
+    <div class="square mar cur:w-resize">
+      <div class="hey">cur:w-resize</div>
+    </div>
+    <div class="square mar cur:ns-resize">
+      <div class="hey">cur:ns-resize</div>
+    </div>
+    <div class="square mar cur:ew-resize">
+      <div class="hey">cur:ew-resize</div>
+    </div>
+    <div class="square mar cur:ne-resize">
+      <div class="hey">cur:ne-resize</div>
+    </div>
+    <div class="square mar cur:nw-resize">
+      <div class="hey">cur:nw-resize</div>
+    </div>
+    <div class="square mar cur:se-resize">
+      <div class="hey">cur:se-resize</div>
+    </div>
+    <div class="square mar cur:sw-resize">
+      <div class="hey">cur:sw-resize</div>
+    </div>
+    <div class="square mar cur:nesw-resize">
+      <div class="hey">cur:nesw-resize</div>
+    </div>
+    <div class="square mar cur:nwse-resize">
+      <div class="hey">cur:nwse-resize</div>
+    </div>
+    <div class="square mar cur:none">
+      <div class="hey">cur:none</div>
+    </div>  
+    <div class="square mar cur:auto">
+      <div class="hey">cur:auto</div>
+    </div>
+    <div class="square mar cur:default">
+      <div class="hey">cur:default</div>
+    </div>
   </div>
 </div>
 </section>
@@ -112,17 +202,17 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/padding/">
+      <a class="nav-left" href="/helpmateCSS/center/">
         <span class="nav-arrow">← </span>
         
-          padding
+          center
         
       </a>
     
     
-      <a class="nav-right" href="/margin/">
+      <a class="nav-right" href="/helpmateCSS/hiding/">
         
-          margin
+          hiding
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -138,7 +228,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Resize"><span class="toc-nav-text">Resize</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Pointer-Events"><span class="toc-nav-text">Pointer Events</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Cursors"><span class="toc-nav-text">Cursors</span></a></li></ol>
     
   </div>
 </aside>
@@ -148,7 +238,7 @@
 
 <script>
   (function () {
-    var url = 'https://felippe-regazio.github.io/resize/';
+    var url = 'https://felippe-regazio.github.io/helpmateCSS/cursor/';
     var banner = ''
     // $('.header').removeClass('fixed-header')
 
@@ -197,7 +287,7 @@
     var gitmentConfig = "yanm1ng";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "resize",
+        id: "cursor",
         owner: "yanm1ng",
         repo: "yanm1ng.github.io",
         oauth: {
