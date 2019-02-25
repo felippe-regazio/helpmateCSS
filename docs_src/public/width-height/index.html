@@ -10,7 +10,7 @@
   
   <title>
     
-      overflow | HelpmateCSS Documentation
+      width-height | HelpmateCSS Documentation
     
   </title>
   <!-- css -->
@@ -83,28 +83,47 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h3 id="Overflow"><a href="#Overflow" class="headerlink" title="Overflow"></a>Overflow</h3>
+    <section class="markdown-content"><h3 id="Width"><a href="#Width" class="headerlink" title="Width"></a>Width</h3>
 <div class="content">
-  <br><br>
-  <div class="block">
-    <div class="square mar pad:sm ovf:hidden">
-      <p class="hey mar:none">ovf:hidden</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
+  <h4 id="w-full" class="fw:bold"><span class="hey">w:full</span> (width:100%)</h4>
+  <div class="block cen:flex text">
+    <div class="square mar padding:sm w:full">w:full</div>
+  </div>
+  <h4 id="w-auto" class="hey">w:auto</h4>
+  <div class="block cen:flex text">
+    <div class="square mar w:auto">w:auto</div>
+  </div>
+  <h4 id="w-max-100" class="fw:bold"><span class="hey">w:max-100</span> (max-width:100%)</h4>
+  <div class="block cen:flex text">
+    <div class="square mar w:max-100 cen:flex">
+      w:max-100
     </div>
-    <div class="square mar pad:sm ovf:auto">
-      <p class="hey mar:none">ovf:auto</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
-    </div>
-    <div class="square mar pad:sm ovf:scroll">
-      <p class="hey mar:none">ovf:scroll</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
-    </div>
-    <div class="square mar pad:sm ovf:visible">
-      <p class="hey mar:none">ovf:visible</p>
-      <p>Consectetur magna ex aute in sunt velit fugiat incididunt est in excepteur minim sunt commodo laboris aliqua elit dolore culpa in officia sit voluptate elit magna voluptate nisi eiusmod ad ea.</p>
-    </div>      
+  </div>            
+  <h4 id="w-none" class="hey">w:none</h4>
+  <div class="block cen:flex text">
+    <div class="square mar w:none"></div>
   </div>
 </div>
+
+<h3 id="Height"><a href="#Height" class="headerlink" title="Height"></a>Height</h3>
+<div class="content">
+  <h4 id="h-full" class="fw:bold"><span class="hey">h:full</span> (height:100%)</h4>
+  <div class="block cen:flex text" style="height: 200px">
+    <div class="square mar padding:sm h:full">h:full</div>
+  </div>
+  <h4 id="h-auto" class="hey">h:auto</h4>
+  <div class="block cen:flex text">
+    <div class="square mar h:auto">h:auto</div>
+  </div>
+  <h4 id="h-max-100" class="fw:bold"><span class="hey">h:max-100</span> (max-height:100%)</h4>
+  <div class="block cen:flex text">
+    <div class="square mar h:max-100"></div>
+  </div>            
+  <h4 id="h-none" class="hey">h:none</h4>
+  <div class="block cen:flex text">
+    <div class="square mar h:none"></div>
+  </div>
+</div>  
 </section>
     <!-- Tags START -->
     
@@ -114,20 +133,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/helpmateCSS/list/">
+      <a class="nav-left" href="/visibility/">
         <span class="nav-arrow">← </span>
         
-          list
+          visibility
         
       </a>
     
-    
-      <a class="nav-right" href="/helpmateCSS/padding/">
-        
-          padding
-        
-        <span class="nav-arrow"> →</span>
-      </a>
     
   </div>
 
@@ -140,7 +152,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Overflow"><span class="toc-nav-text">Overflow</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Width"><span class="toc-nav-text">Width</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#w-full"><span class="toc-nav-text">w:full (width:100%)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#w-auto"><span class="toc-nav-text">w:auto</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#w-max-100"><span class="toc-nav-text">w:max-100 (max-width:100%)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#w-none"><span class="toc-nav-text">w:none</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Height"><span class="toc-nav-text">Height</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#h-full"><span class="toc-nav-text">h:full (height:100%)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#h-auto"><span class="toc-nav-text">h:auto</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#h-max-100"><span class="toc-nav-text">h:max-100 (max-height:100%)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#h-none"><span class="toc-nav-text">h:none</span></a></li></ol></li></ol>
     
   </div>
 </aside>
@@ -150,7 +162,7 @@
 
 <script>
   (function () {
-    var url = 'https://felippe-regazio.github.io/helpmateCSS/overflow/';
+    var url = 'https://felippe-regazio.github.io/width-height/';
     var banner = ''
     // $('.header').removeClass('fixed-header')
 
@@ -199,7 +211,7 @@
     var gitmentConfig = "yanm1ng";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "overflow",
+        id: "width-height",
         owner: "yanm1ng",
         repo: "yanm1ng.github.io",
         oauth: {

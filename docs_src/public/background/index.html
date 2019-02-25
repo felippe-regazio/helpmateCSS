@@ -10,7 +10,7 @@
   
   <title>
     
-      visibility | HelpmateCSS Documentation
+      background | HelpmateCSS Documentation
     
   </title>
   <!-- css -->
@@ -83,7 +83,56 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><h3 id="Visibility"><a href="#Visibility" class="headerlink" title="Visibility"></a>Visibility</h3><div class="content"><br>  <div class="block cen:flex"><br>    <div class="square cen:flex mar pad:sm"><br>      <div class="vis:visible">vis:visible</div><br>    </div><br>    <div class="square cen:flex mar pad:sm"><br>      vis:hidden<br>      <div class="vis:hidden">Hello</div><br>    </div><br>    <div class="square cen:flex mar pad:sm"><br>      vis:collapse<br>      <div class="vis:collapse">Hello</div><br>    </div><br>  </div><br></div></section>
+    <section class="markdown-content"><h3 id="Background-Sizes"><a href="#Background-Sizes" class="headerlink" title="Background Sizes"></a>Background Sizes</h3>
+<div class="content">
+	<div class="block">
+	  <!--  -->
+	  <div class="square mar big" style="background-image: url('../candy.jpg')">
+	    <span class="hey mar:sm">bg with no class</span>
+	  </div>
+	  <!--  -->
+	  <div class="square mar big bg:auto" style="background-image: url('../candy.jpg')">
+	    <span class="hey mar:sm">bg:auto</span>
+	  </div>       
+	  <!--  -->
+	  <div class="square mar big bg:cover" style="background-image: url('../candy.jpg')">
+	    <span class="hey mar:sm">bg:cover</span>
+	  </div> 
+	  <!--  -->
+	  <div class="square mar big bg:contain" style="background-image: url('../candy.jpg')">
+	    <span class="hey mar:sm">bg:contain</span>
+	  </div>      
+	</div>
+</div>
+
+<h3 id="Background-Position"><a href="#Background-Position" class="headerlink" title="Background Position"></a>Background Position</h3>
+<div class="content">
+	<div class="block">
+	    <div class="square mar big bg:center" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:center</span>
+	    </div>       
+	    <!--  -->
+	    <div class="square mar big bg:left" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:left</span>
+	    </div>
+	    <!--  -->
+	    <div class="square mar big bg:right" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:right</span>
+	    </div>      
+	    <div class="square mar big bg:bottom" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:bottom</span>
+	    </div> 
+	    <!--  -->
+	    <div class="square mar big bg:top" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:top</span>
+	    </div>
+	    <!--  -->
+	    <div class="square mar big bg:unset" style="background-image: url('../candy.jpg')">
+	      <span class="hey mar:sm">bg:unset</span>
+	    </div>      
+	</div> 
+</div>
+</section>
     <!-- Tags START -->
     
     <!-- Tags END -->
@@ -92,17 +141,17 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/helpmateCSS/text/">
+      <a class="nav-left" href="/border/">
         <span class="nav-arrow">← </span>
         
-          text
+          border
         
       </a>
     
     
-      <a class="nav-right" href="/helpmateCSS/width-height/">
+      <a class="nav-right" href="/center/">
         
-          width-height
+          center
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -118,7 +167,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Visibility"><span class="toc-nav-text">Visibility</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Background-Sizes"><span class="toc-nav-text">Background Sizes</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Background-Position"><span class="toc-nav-text">Background Position</span></a></li></ol>
     
   </div>
 </aside>
@@ -128,7 +177,7 @@
 
 <script>
   (function () {
-    var url = 'https://felippe-regazio.github.io/helpmateCSS/visibility/';
+    var url = 'https://felippe-regazio.github.io/background/';
     var banner = ''
     // $('.header').removeClass('fixed-header')
 
@@ -177,7 +226,7 @@
     var gitmentConfig = "yanm1ng";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
-        id: "visibility",
+        id: "background",
         owner: "yanm1ng",
         repo: "yanm1ng.github.io",
         oauth: {
