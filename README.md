@@ -52,7 +52,7 @@ a simple overview of the usage:
 </div>
 ```
 
-So, you must add the prefix of the propertie you want to change (bg for background, for example), followed
+So, you must add the prefix of the property you want to change (bg for background, for example), followed
 by the :value that you want to apply - bg:cover or bg:auto to change background behavior for example.
 
 #### Sizes
